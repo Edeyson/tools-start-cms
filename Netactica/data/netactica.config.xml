@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<NetSuiteConfigs>
+  <NetSuiteConfig PortalId="0" OutOfService="False" AirAdvancedPurchaseDays="2" AirFlexDateEnabled="True" HotelAdvancedPurchaseDays="2" HotelsMaxAgeChild="10" TravelExtraAdvancedPurchaseDays="2" TravelExtraMaxDaysAllowedSearch="21" MaxPassengerSearch="12" PromoCodeAllowed="True" EnableHotelStaticContent="True" EnableHotelNewFrontEnd="True" GoogleMapsApiKey="" />
+  <NetSuiteAdvancePurchase />
+  <NetSuiteProfiles>
+    <Userservice Name="dtvcoOwner" Address="BOG, CO. Carrera 15, 8821, Chico Norte" Phone="6015806443" PhoneAlt="" />
+    <BrachCodes>
+      <BrachCode Code="01" Alias="searchform.dnndev.me/en-us" Address="BOG, CO. Carrera 15, 8821, Chico Norte" Phone="6015806443" PhoneAlt="" />
+    </BrachCodes>
+  </NetSuiteProfiles>
+</NetSuiteConfigs>
