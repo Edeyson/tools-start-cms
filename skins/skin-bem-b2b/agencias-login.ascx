@@ -14,7 +14,7 @@
 
     <!-- ___include layouts___ -->
 
-    <!--#include file="includes/_panels/panels_1.ascx"-->
+    <!--#include file="includes/_panels/panels_3.ascx"-->
 
     <!-- ___include footer___ -->
 

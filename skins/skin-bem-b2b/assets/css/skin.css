@@ -5,28 +5,34 @@
 }
 
 :root {
-  --net-color-primary: #777;
-  --net-color-secundary: #007BFF;
+  --net-color-primary: #ffb300;
+  --net-color-secundary: #000000;
   --net-color-sucess: #198754;
   --net-color-danger: #dc3545;
   --net-color-warning: #ffc107;
-  --net-color-info: #0dcaf0;
-  --net-color-light: #f8f9fa;
-  --net-color-dark: #343a40;
+  --net-color-info: #0197ec;
+  --net-color-light: #fff;
+  --net-color-dark: #596266;
   /*Color de botones*/
-  --net-btn-bg-primary: #007BFF;
-  --net-btn-bg-primary-hover: #0571dc;
+  --net-btn-bg-primary: #ffb300;
+  --net-btn-bg-primary-hover: #ca951b;
   /*esta configuracion de abajo aplica unicamente a header transparente*/
-  --color-header-link: var(--net-color-primary);
-  --color-header-link-hover: var(--net-color-secundary);
+  --color-header-link: #000;
+  --color-header-link-hover: #000;
   --color-header-transparent-link: #fff;
   --color-header-transparent-link-hover: #fff;
   /*Color de links para paginas*/
-  --net-color-link: #007BFF;
-  --net-color-link-hover: #0571dc;
+  --net-color-link: #ffb300;
+  --net-color-link-hover: #ca951b;
+
+  --color-1: #ffb300;
+  --color-2: #ffffff;
+  --color-3: #ca951b;
 }
 
-html, body, .wrapper {
+html,
+body,
+.wrapper {
   height: 100%;
   width: 100%;
   font-family: var(--font-family-primary);
@@ -42,6 +48,7 @@ a {
   text-decoration: none;
   margin-bottom: 0;
 }
+
 a:hover {
   text-decoration: underline;
 }
@@ -54,7 +61,8 @@ ul {
   margin: 0;
 }
 
-em, small {
+em,
+small {
   letter-spacing: 0;
 }
 
@@ -70,7 +78,8 @@ body {
   overflow: hidden;
 }
 
-li, p {
+li,
+p {
   line-height: 1.5em;
 }
 
@@ -81,6 +90,7 @@ li, p {
 a {
   border: 0;
 }
+
 a img {
   border: 0;
 }
@@ -89,6 +99,7 @@ a img {
   max-width: 150px;
   max-height: 40px;
 }
+
 @media (min-width: 1025px) {
   #dnn_dnnLOGO_imgLogo {
     max-width: 190px;
@@ -96,13 +107,86 @@ a img {
   }
 }
 
-abbr, acronym, address, applet, article, aside, audio, b, big, blockquote, body, canvas, caption, center, cite, code, dd, del, details, dfn, div, dl, dt, em, embed, fieldset, figcaption, figure, footer, form, h1, h2, h3, h4, h5, h6, header, hgroup, html, i, iframe, img, ins, kbd, label, legend, li, mark, menu, nav, object, ol, output, p, pre, q, ruby, s, samp, section, small, span, strike, strong, sub, summary, sup, time, tt, u, ul, var, video {
+abbr,
+acronym,
+address,
+applet,
+article,
+aside,
+audio,
+b,
+big,
+blockquote,
+body,
+canvas,
+caption,
+center,
+cite,
+code,
+dd,
+del,
+details,
+dfn,
+div,
+dl,
+dt,
+em,
+embed,
+fieldset,
+figcaption,
+figure,
+footer,
+form,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+header,
+hgroup,
+html,
+i,
+iframe,
+img,
+ins,
+kbd,
+label,
+legend,
+li,
+mark,
+menu,
+nav,
+object,
+ol,
+output,
+p,
+pre,
+q,
+ruby,
+s,
+samp,
+section,
+small,
+span,
+strike,
+strong,
+sub,
+summary,
+sup,
+time,
+tt,
+u,
+ul,
+var,
+video {
   border: 0;
 }
 
 .TB_Wrapper {
   box-sizing: content-box;
 }
+
 .TB_Wrapper * {
   box-sizing: content-box;
 }
@@ -110,29 +194,39 @@ abbr, acronym, address, applet, article, aside, audio, b, big, blockquote, body,
 .dnnActionMenu {
   box-sizing: content-box;
 }
-.dnnActionMenu *, .dnnActionMenu:after, .dnnActionMenu:before {
+
+.dnnActionMenu *,
+.dnnActionMenu:after,
+.dnnActionMenu:before {
   box-sizing: content-box;
 }
 
 .dnn_mact {
   box-sizing: content-box;
 }
-.dnn_mact *, .dnn_mact:after, .dnn_mact:before {
+
+.dnn_mact *,
+.dnn_mact:after,
+.dnn_mact:before {
   box-sizing: content-box;
 }
 
 [id*=ControlPanel] {
   box-sizing: content-box;
 }
-[id*=ControlPanel] *, [id*=ControlPanel]:after {
+
+[id*=ControlPanel] *,
+[id*=ControlPanel]:after {
   box-sizing: content-box;
 }
 
-[class*=RadAjaxPanel] *, [class*=Digital] * {
+[class*=RadAjaxPanel] *,
+[class*=Digital] * {
   box-sizing: content-box;
 }
 
-html, li {
+html,
+li {
   font-size: 16px;
 }
 
@@ -144,7 +238,8 @@ ol.list-unstyled {
   list-style: none;
   margin: 0;
 }
-ol.list-unstyled > li {
+
+ol.list-unstyled>li {
   list-style: none;
   margin: 0;
 }
@@ -153,10 +248,12 @@ ul.list-unstyled {
   list-style: none;
   margin: 0;
 }
-ul.list-unstyled > li {
+
+ul.list-unstyled>li {
   list-style: none;
   margin: 0;
 }
+
 ul.row {
   margin-left: -15px;
   margin-right: -15px;
@@ -169,9 +266,11 @@ ol {
 ul {
   list-style: none;
 }
+
 ul li {
   list-style-type: disc;
 }
+
 ul li li {
   list-style-type: circle;
 }
@@ -199,14 +298,35 @@ body {
   font-size: 13px;
 }
 
-.CommandButton, .Head, .Normal, .NormalBold, .NormalDisabled, .NormalRed, .NormalTextBox, .SubHead, .SubSubHead {
+.CommandButton,
+.Head,
+.Normal,
+.NormalBold,
+.NormalDisabled,
+.NormalRed,
+.NormalTextBox,
+.SubHead,
+.SubSubHead {
   font-family: var(--font-family-primary);
 }
 
-a:hover, a:link, a:visited {
+a:hover,
+a:link,
+a:visited {
   font-family: var(--font-family-primary);
 }
-body, h1, h2, h3, h4, h5, h6, input, table, td, th {
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+input,
+table,
+td,
+th {
   font-family: var(--font-family-primary);
 }
 
@@ -218,11 +338,17 @@ Body #Form {
   height: 100%;
 }
 
-embed, img, object {
+embed,
+img,
+object {
   max-width: 100%;
 }
 
-[class*=map] img, [class*=Map] img, [id*=map] img, [id*=Map] img, table img {
+[class*=map] img,
+[class*=Map] img,
+[id*=map] img,
+[id*=Map] img,
+table img {
   max-width: none !important;
 }
 
@@ -243,10 +369,13 @@ small {
   font-size: 12px;
 }
 
-a:active, a:link, a:visited {
+a:active,
+a:link,
+a:visited {
   text-decoration: none;
   color: var(--net-color-link);
 }
+
 a:hover {
   text-decoration: underline;
   color: var(--net-color-link-hover);
@@ -256,11 +385,16 @@ p {
   margin: 0;
 }
 
-ol li > ol li {
+ol li>ol li {
   list-style-type: lower-latin;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   color: #494949;
   line-height: 1.3em;
   margin: 0 0 10px;
@@ -296,11 +430,13 @@ h6 {
     font-size: 14px;
   }
 }
+
 @media screen and (min-width: 720px) {
   html {
     font-size: 18px;
   }
 }
+
 #breadcrumb {
   font-family: var(--font-family-primary);
   border-radius: 0;
@@ -312,12 +448,14 @@ h6 {
   margin: 0;
   display: block;
 }
+
 #breadcrumb a {
   margin-left: 10px;
   font-weight: 600;
   font-size: 11px;
   color: #626262;
 }
+
 #breadcrumb a:first-child {
   font-family: var(--font-family-primary);
   font-size: 11px !important;
@@ -325,7 +463,9 @@ h6 {
   color: #7b7d82;
   margin: 0;
 }
-#breadcrumb img, #breadcrumb span {
+
+#breadcrumb img,
+#breadcrumb span {
   margin-left: 10px;
 }
 
@@ -334,23 +474,22 @@ h6 {
 .link {
   text-decoration: none;
 }
+
 .link:hover {
   text-decoration: underline;
 }
+
 .link--icon {
   color: var(--net-color-light) !important;
-  background-color: var(--net-color-primary);
-  border-radius: 50%;
   height: 30px;
   width: 30px;
   display: flex;
   align-items: center;
   justify-content: center;
 }
+
 .link--icon:hover {
-  color: var(--net-color-light) !important;
-  background-color: var(--net-color-secundary);
-  text-decoration: none;
+  color: var(--net-color-primary) !important;
 }
 
 .w-100 {
@@ -364,11 +503,13 @@ h6 {
 .net-accordion__container {
   padding: 10px 0 15px;
 }
+
 .net-accordion__title {
   padding: 10px 0;
   position: relative;
   font-size: 18px;
 }
+
 .net-accordion__title::after {
   content: "+";
   position: absolute;
@@ -389,23 +530,28 @@ h6 {
   justify-content: center;
   border-radius: 10px;
 }
+
 .net-accordion__child {
   margin-bottom: 2px;
 }
+
 @media (max-width: 768px) {
   .net-accordion__child {
     width: 100%;
   }
 }
+
 .net-accordion__child.active .net-accordion__title::after {
   content: "-";
 }
+
 .net-accordion__body {
   padding: 0 0;
   height: 0;
   position: relative;
   overflow: hidden;
 }
+
 .net-accordion__child.active .net-accordion__body {
   display: block;
   padding: 10px 0;
@@ -417,18 +563,21 @@ h6 {
   .net-accordion__title::after {
     content: inherit;
   }
+
   .net-accordion__body {
     height: -moz-max-content;
     height: max-content;
     padding: 10px 0;
     background-color: transparent;
   }
+
   .net-accordion__title {
     background-color: transparent;
     font-weight: 500;
     font-size: 17px;
   }
 }
+
 /* end estilos de bloques/elementos Reutilizables */
 /* pagina internet explorer */
 .ie-page {
@@ -443,55 +592,68 @@ h6 {
   align-items: center;
   padding: 30px 0;
 }
+
 @media (min-width: 1025px) {
   .ie-page {
     gap: 25px;
     width: 720px;
   }
 }
+
 .ie-page__body {
   font-size: 20px;
   display: flex;
   flex-direction: column;
   gap: 10px;
 }
+
 .ie-page__text {
   margin: 0;
   line-height: 25px;
   font-size: 16px;
 }
+
 .ie-page__link {
   text-decoration: none;
 }
+
 .ie-page__link--primary {
   font-weight: bold;
 }
+
 .ie-page__link:hover {
   text-decoration: underline;
 }
+
 .ie-page__title {
   font-size: 30px;
   font-weight: 700;
 }
+
 .ie-page__subtitle {
   font-size: 18px;
   font-weight: 500;
 }
-.ie-page__title, .ie-page__subtitle {
+
+.ie-page__title,
+.ie-page__subtitle {
   text-align: center;
 }
+
 .ie-page__container {
   display: flex;
   flex-direction: column;
   gap: 10px;
   margin-top: 25px;
 }
+
 .ie-page__container--footer {
   align-items: center;
   justify-content: center;
   gap: 40px;
   margin-top: 40px;
 }
+
 .ie-page__line {
   border-bottom: solid 1px #999999;
   width: 100%;
@@ -508,42 +670,53 @@ h6 {
   background: #ecf1f6;
   padding: 10px;
 }
+
 .login__body {
   width: 100%;
   max-width: 600px;
 }
-.login__logo, .login__footer {
+
+.login__logo,
+.login__footer {
   display: flex;
   justify-content: center;
   align-items: center;
 }
+
 .login__footer {
   margin-top: 10px;
 }
+
 .login__footer a {
   width: 120px;
 }
+
 @media (min-width: 780px) {
   .login__footer a {
     width: 140px;
   }
 }
+
 .login__logo {
   margin-bottom: 25px;
 }
+
 .login__pane {
   display: flex;
   justify-content: center;
   align-items: center;
 }
-.login__pane > div {
+
+.login__pane>div {
   width: 94%;
   max-width: 380px;
 }
+
 .login .DNNContainer_Title_h2.SpacingBottom {
   box-shadow: rgba(0, 0, 0, 0.02) 2.76726px 2.76726px 2.21381px 0px, rgba(0, 0, 0, 0.03) 6.6501px 6.6501px 5.32008px 0px, rgba(0, 0, 0, 0.04) 12.5216px 12.5216px 10.0172px 0px, rgba(0, 0, 0, 0.04) 22.3363px 22.3363px 17.869px 0px, rgba(0, 0, 0, 0.05) 41.7776px 41.7776px 33.4221px 0px, rgba(0, 0, 0, 0.07) 50px 50px 80px 0px;
   border-radius: 10px;
 }
+
 .login .heading_wrapper {
   padding-left: 0;
   padding-right: 0;
@@ -573,8 +746,9 @@ h6 {
   background: #fff;
   border: 0;
   border-top: 1px solid #ddd;
-  border-radius: 0px 0px 10px 10px;
+  border-radius: 10px;
 }
+
 .LoginPanel .dnnForm .dnnFormItem a.dnnPrimaryAction {
   box-shadow: none;
   border-radius: 0.25rem;
@@ -584,14 +758,22 @@ h6 {
   text-shadow: none;
   margin: 0px;
   border: 1px solid var(--net-btn-bg-primary);
-  color: var(--net-color-light);
+  color: #000;
   font-size: 16px;
   padding: 15px 0;
   font-weight: 400;
 }
+
+.mainPanels__floatAgency .LoginPanel {
+  width: 75%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 .LoginPanel .dnnForm .dnnFormItem a.dnnPrimaryAction:hover {
   background-color: var(--net-btn-bg-primary-hover) !important;
 }
+
 .LoginPanel .dnnForm .dnnFormItem a.dnnSecondaryAction {
   box-shadow: none;
   border-radius: 0px;
@@ -605,8 +787,9 @@ h6 {
   font-weight: 500;
   text-transform: capitalize;
   font-size: 14px;
-  color: var(--net-color-link);
+  color: #000;
 }
+
 .LoginPanel .dnnForm .dnnFormItem:nth-child(4) a:nth-child(3) {
   display: none;
 }
@@ -618,6 +801,7 @@ h6 {
   color: #737373;
   margin-bottom: 4px;
 }
+
 .loginContent .dnnFormItem:nth-child(3),
 .loginContent .dnnFormItem:nth-child(5) .dnnFormLabel {
   display: none;
@@ -634,6 +818,20 @@ h6 {
   border-bottom: none;
   margin-bottom: 16px;
   border-radius: 4px;
+  padding: 24px 10px;
+}
+
+.mainPanels__floatAgency .dnnLoginService input[type=text],
+.mainPanels__floatAgency .dnnLoginService input[type=password] {
+  width: 100%;
+  border-radius: 0px;
+  height: 44px;
+  min-width: 100%;
+  border: none !important;
+  box-shadow: none !important;
+  border-bottom: 1px solid #202020 !important;
+  margin-bottom: 16px;
+  border-radius: 0;
   padding: 24px 10px;
 }
 
@@ -657,6 +855,7 @@ span#dnn_ctr36960_Login_Login_DNN_lblLoginRememberMe {
 .registerFormPane a.dnnFormHelp {
   right: auto;
 }
+
 .registerFormPane .dnnFormItem input[type=text],
 .registerFormPane .dnnFormItem input[type=password],
 .registerFormPane .dnnFormItem input[type=email],
@@ -682,9 +881,10 @@ span#dnn_ctr36960_Login_Login_DNN_lblLoginRememberMe {
   --tw-bg-opacity: 1 !important;
   background-color: rgb(255 255 255/var(--tw-bg-opacity)) !important;
   --tw-shadow: 0 1px 2px 0rgb(0 0 0 / .05) !important;
-  --tw-shadow-colored: 0 1px 2px 0!important;
+  --tw-shadow-colored: 0 1px 2px 0 !important;
   box-shadow: 0 0 rgba(0, 0, 0, 0), 0 0 rgba(0, 0, 0, 0), var(--tw-shadow) !important;
 }
+
 .registerFormPane .dnnFormItem input[type=text]:focus,
 .registerFormPane .dnnFormItem input[type=password]:focus,
 .registerFormPane .dnnFormItem input[type=email]:focus,
@@ -693,13 +893,16 @@ span#dnn_ctr36960_Login_Login_DNN_lblLoginRememberMe {
 .registerFormPane .dnnFormItem textarea:focus {
   border-color: var(--net-color-secundary) !important;
 }
+
 .registerFormPane div.dnnRegistrationForm .dnnForm {
   width: 100%;
 }
+
 .registerFormPane div.dnnRegistrationForm .password-strength-container {
   width: 100%;
   max-width: none;
 }
+
 .registerFormPane div.dnnRegistrationForm {
   min-width: auto;
   max-width: 910px;
@@ -710,9 +913,11 @@ span#dnn_ctr36960_Login_Login_DNN_lblLoginRememberMe {
   margin-bottom: 30px;
   box-shadow: 0px 12px 13px #f0f0f0;
 }
+
 .registerFormPane .dnnSocialRegistration {
   display: none;
 }
+
 .registerFormPane .DnnModule-Registration .dnnPrimaryAction,
 .registerFormPane .DnnModule-Registration .dnnPrimaryAction:hover {
   box-shadow: none;
@@ -731,10 +936,12 @@ span#dnn_ctr36960_Login_Login_DNN_lblLoginRememberMe {
   padding: 10px 10px;
   width: 180px;
 }
+
 .registerFormPane .DnnModule-Registration .dnnPrimaryAction:hover {
   background-color: var(--net-btn-bg-primary-hover) !important;
   border: 1px solid var(--net-btn-bg-primary-hover) !important;
 }
+
 .registerFormPane .dnnSecondaryAction {
   box-shadow: none;
   border-radius: 0px;
@@ -751,10 +958,12 @@ span#dnn_ctr36960_Login_Login_DNN_lblLoginRememberMe {
   text-transform: capitalize;
   display: none;
 }
+
 .registerFormPane .dnnActions {
   height: 60px;
 }
-.registerFormPane .dnnLabel > label {
+
+.registerFormPane .dnnLabel>label {
   margin-right: 7px;
   font-weight: 400;
 }
@@ -766,6 +975,7 @@ span#dnn_ctr36960_Login_Login_DNN_lblLoginRememberMe {
   align-items: center;
   justify-content: center;
 }
+
 .register__logo {
   display: flex;
   justify-content: center;
@@ -775,40 +985,53 @@ span#dnn_ctr36960_Login_Login_DNN_lblLoginRememberMe {
   .registerFormPane div.dnnRegistrationForm {
     max-width: 100%;
   }
-  .registerFormPane .dnnLabel > label {
+
+  .registerFormPane .dnnLabel>label {
     width: -moz-max-content;
     width: max-content;
     max-width: -moz-max-content;
     max-width: max-content;
   }
-  .dnnFormItem > .dnnLabel {
+
+  .dnnFormItem>.dnnLabel {
     width: -moz-max-content;
     width: max-content;
     max-width: -moz-max-content;
     max-width: max-content;
   }
-  .dnnFormHelp, .dnnForm .dnnFormItem .dnnFormHelp, .dnnTooltip label .dnnFormHelp {
+
+  .dnnFormHelp,
+  .dnnForm .dnnFormItem .dnnFormHelp,
+  .dnnTooltip label .dnnFormHelp {
     position: inherit;
   }
+
   .dnnTooltip {
     position: initial !important;
   }
-  .dnnTooltip .dnnFormHelpContent, .dnnHelperTip .dnnFormHelpContent {
+
+  .dnnTooltip .dnnFormHelpContent,
+  .dnnHelperTip .dnnFormHelpContent {
     width: 148px !important;
     box-shadow: 0px 11px 10px rgba(0, 0, 0, 0.4117647059);
   }
 }
+
 @media (min-width: 1024px) {
-  .dnnForm:nth-child(1) > div:nth-child(3) > div > div:nth-child(1) {
+  .dnnForm:nth-child(1)>div:nth-child(3)>div>div:nth-child(1) {
     padding-right: 5px;
   }
-  .dnnForm:nth-child(1) > div:nth-child(3) > div > div:nth-child(1), .dnnForm:nth-child(1) > div:nth-child(3) > div > div:nth-child(2) {
+
+  .dnnForm:nth-child(1)>div:nth-child(3)>div>div:nth-child(1),
+  .dnnForm:nth-child(1)>div:nth-child(3)>div>div:nth-child(2) {
     width: 50%;
     display: inline-block;
   }
-  .dnnRegistrationForm > div:nth-child(1) > div {
+
+  .dnnRegistrationForm>div:nth-child(1)>div {
     border-radius: 0;
   }
+
   .registerFormPane .dnnLabel {
     float: none;
     margin: 0;
@@ -821,6 +1044,7 @@ span#dnn_ctr36960_Login_Login_DNN_lblLoginRememberMe {
     width: auto;
   }
 }
+
 /* end pagina de register */
 /* pagina 404 */
 .body-page-notfound {
@@ -831,7 +1055,8 @@ span#dnn_ctr36960_Login_Login_DNN_lblLoginRememberMe {
   flex-direction: column;
 }
 
-.notfound-header, .notfound-footer {
+.notfound-header,
+.notfound-footer {
   padding-left: 50px;
   background: #d9d9d9;
   height: 65px;
@@ -848,6 +1073,7 @@ span#dnn_ctr36960_Login_Login_DNN_lblLoginRememberMe {
   max-width: 630px;
   margin: auto;
 }
+
 .notfound-page__body {
   display: flex;
   flex-direction: column;
@@ -856,18 +1082,22 @@ span#dnn_ctr36960_Login_Login_DNN_lblLoginRememberMe {
   font-size: 17px;
   gap: 10px;
 }
+
 .notfound-page__logo img {
   max-width: 300px;
 }
+
 .notfound-page__title {
   font-size: 95px;
   color: var(--net-color-primary);
   font-weight: bold;
 }
+
 .notfound-page__text {
   display: inline-block;
   font-size: 16px;
 }
+
 .notfound-page__text-title {
   font-weight: 800;
   font-size: 32px;
@@ -875,10 +1105,12 @@ span#dnn_ctr36960_Login_Login_DNN_lblLoginRememberMe {
   color: var(--net-color-dark);
   margin-bottom: 0;
 }
+
 .notfound-page__link {
   color: var(--net-color-primary);
   text-decoration: none;
 }
+
 .notfound-page__link:hover {
   color: var(--net-color-secundary);
   text-decoration: underline;
@@ -888,6 +1120,7 @@ span#dnn_ctr36960_Login_Login_DNN_lblLoginRememberMe {
   .notfound-page__body {
     gap: 0;
   }
+
   .notfound-page__text-title {
     font-size: 52px;
     line-height: 70px;
@@ -903,6 +1136,7 @@ span#dnn_ctr36960_Login_Login_DNN_lblLoginRememberMe {
   max-width: 2060px;
   width: 100%;
 }
+
 @media (min-width: 1025px) {
   .containerPanels {
     margin: auto;
@@ -918,41 +1152,425 @@ span#dnn_ctr36960_Login_Login_DNN_lblLoginRememberMe {
 
 .mainPanels__floatAgency {
   display: flex;
-  flex-direction: column;
+  align-items: center;
   gap: 20px;
+
 }
+
+.section-login p {
+  color: var(--net-color-light) !important;
+  font-size: 17px;
+}
+
+.section-login h1 {
+  color: var(--net-color-light);
+}
+
+.section-login a {
+  background-color: var(--net-color-primary);
+  color: #000;
+  padding: 0.5rem;
+  text-transform: uppercase;
+  border-radius: 7px;
+}
+
 
 @media (min-width: 1025px) {
   .mainPanels {
     position: relative;
   }
+
   .mainPanels__floatPane {
     width: 70%;
     max-width: 1140px;
     position: absolute;
-    z-index: 1;
+    z-index: 0;
     left: 0;
     right: 0;
-    top: 80px;
+    top: 150px;
     margin: auto;
   }
+
   .mainPanels__floatAgency {
-    display: grid;
-    justify-content: space-around;
-    grid-template-columns: 70% 30%;
     position: absolute;
     left: 0;
     right: 0;
-    top: 30px;
+    top: 70px;
     margin: auto;
     width: 75%;
     max-width: 1170px;
   }
-  .dnnEditState .mainPanels__floatPane, .dnnEditState .mainPanels__floatAgency {
+
+  .dnnEditState .mainPanels__floatPane,
+  .dnnEditState .mainPanels__floatAgency {
     position: initial;
   }
+
   .dnnEditState .mainPanels__floatAgency {
     display: block;
   }
 }
-/* end estilos para grilla(paneles)*//*# sourceMappingURL=skin.css.map */
+
+.bg-blue {
+  background-color: var(--net-color-primary) !important;
+}
+
+.divline {
+  background-color: var(--net-color-primary);
+  height: 93px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.divline>p {
+  color: #000;
+  font-style: normal;
+  font-size: 23px;
+  line-height: 30px;
+  margin-bottom: 0;
+}
+
+@media(max-width:1024px) {
+  .divline {
+    border-radius: 6px;
+    height: inherit;
+  }
+
+  .divline>p {
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    line-height: 40px;
+  }
+  .section-login h1, .section-login p, .section-login{
+    color: #000 !important;
+  }
+  .mainPanels__floatAgency{
+    flex-wrap: wrap;
+    margin: 0 !important;
+  }
+
+}
+
+.divline>p>span {
+  color: #fff;
+
+}
+
+.sectionInfo-2 .sectionInfoBody-2,
+.sectionInfo-3 .sectionInfoBody-3 {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(250px, 1fr));
+  min-height: 150px;
+  align-items: center;
+  gap: 20px;
+}
+
+@media (max-width:768px) {
+
+  .sectionInfo-2 .sectionInfoBody-2,
+  .sectionInfo-3 .sectionInfoBody-3 {
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  }
+}
+
+.sectionInfo-2 .sectionInfoBody-2>div.intro>h1 {
+  font-size: 50px;
+  color: #000;
+}
+
+.sectionInfo-2 .sectionInfoBody-2>div.intro>p {
+  margin-bottom: 0;
+  color: var(--net-color-primary);
+}
+
+.sectionInfo-2 .sectionInfoBody-2>div:not(.intro),
+.sectionInfo-3 .sectionInfoBody-3>div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+  padding: 30px 0;
+  text-align: center;
+  border: 1px solid rgb(209, 209, 209);
+  color: #000;
+}
+
+.sectionInfo-2 .sectionInfoBody-2>div:not(.intro)>p,
+.sectionInfo-3 .sectionInfoBody-3>div>p {
+  margin-bottom: 0;
+}
+
+.sectionInfo-2 .sectionInfoBody-2>div>img {
+  width: 60px;
+}
+
+.sectionInfo-2 .sectionInfoBody-2>div>h2:nth-child(2),
+.sectionInfo-3 .sectionInfoBody-3>div>h2:nth-child(3) {
+  font-size: 1.2rem;
+  margin: 0;
+  color: #000;
+}
+
+.sectionInfo-2 .sectionInfoBody-2>div>p:nth-child(3),
+.sectionInfo-3 .sectionInfoBody-3>div>p:nth-child(4) {
+  display: block;
+  max-width: 350px;
+  text-align: center;
+}
+
+.sectionInfo-3 .sectionInfoBody-3>div {
+  padding: 0 0 30px;
+}
+
+.sectionInfo-3 .sectionInfoBody-3>div>img:nth-child(1) {
+  width: 100%;
+  margin-bottom: 15px;
+}
+
+.sectionInfo-3 .sectionInfoBody-3>div>img:nth-child(2) {
+  width: 60px;
+}
+
+.grid-list {
+  display: grid;
+  gap: 20px;
+  align-items: center;
+  justify-content: center;
+}
+
+@media (min-width:768px) {
+  .grid-list {
+    grid-template-columns: 48% 23% 23%;
+  }
+
+}
+
+.cms-flex__title_h2_center .titulo,
+.cms-flex__Custom_h2_center .titulo,
+.cms-flex__title_h3_center .titulo,
+.cms-flex__Custom_h3_center .titulo {
+  text-align: center;
+  display: block;
+}
+
+.mt-3 {
+  margin-top: 30px;
+}
+
+.bx-wrapper {
+  margin-bottom: 0 !important;
+}
+
+/* contactUs */
+
+@media (max-width:1024px) {
+  .contactUs {
+      padding-bottom: 30px;
+  }
+}
+
+div#dataContact .item2 iconify-icon {
+  width: 16px;
+  text-align: center;
+  margin-right: 5px;
+}
+
+.contactUs>div>div>div>div {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.contactUs .dnnForm .dnnFormItem:nth-child(1),
+.contactUs .dnnForm .dnnFormItem:nth-child(2) {
+  width: 50%;
+}
+
+.contactUs .dnnForm input.dnnFormRequired {
+  border-left: 1px solid #ced4da!important;
+  width: 99%;
+  max-width: 100%;
+  box-shadow: none!important;
+  border: 1px solid #ced4da!important;
+}
+
+.contactUs a#dnn_ctr38607_Default_Form_cmdUpdate {
+  border: none;
+  padding: 7px;
+}
+
+.contactUs .dnnFormItem textarea {
+  min-height: 80px;
+  width: 100%;
+  max-width: 100%;
+}
+
+.contactUs .dnnActions .dnnPrimaryAction{
+  background: var(--net-color-primary) !important;
+  color: #000 !important;
+  border-color: var(--net-color-primary) !important ;
+}
+.contactUs .dnnActions .dnnSecondaryAction{
+  color: #000 !important;
+}
+
+
+#dataContact ul {
+  margin-left: 0
+}
+#dataContact a{
+  color: var(--net-color-secundary) !important;
+}
+
+#dataContact ul li {
+  list-style: none;
+}
+
+#dataContact hr {
+  background-image: -webkit-linear-gradient(left, transparent, #dbdbdb, transparent);
+  background-image: linear-gradient(to right, transparent, #dbdbdb, transparent);
+  border: 0;
+  height: 1px;
+  margin: 22px 0;
+}
+div#dataContact li {
+  font-size: 14px;
+  line-height: 25px;
+}
+
+#dnn_ctr498_Default_Form_Security_x0020_Code_label ~ .dnnLeft{
+  max-width: 359px;
+}
+
+/* end contactUs */
+
+
+/* ---------------------------------------------------containers text-------------------------------------------------------------------- */
+
+.bg-cont-1{
+  background: var(--color-1);
+}
+.color-cont-1{
+  color: var(--color-1);
+}
+.border-cont-1{
+  border-color: var(--color-1);
+}
+.mt-3{
+  margin-top:30px;
+}
+
+.cms-flex__title_h2_left .titulo,
+.cms-flex__Custom_h2_left .titulo {
+  text-align: left;
+  display: block;
+  font-weight: 400;
+}
+
+.dnnFormLabelWithoutHelp label {
+  font-weight: 400;
+}
+
+.cms-flex__title_h2_center .titulo,
+.cms-flex__Custom_h2_center .titulo,
+.cms-flex__title_h3_center .titulo,
+.cms-flex__Custom_h3_center .titulo{
+  text-align: center;
+  display: block;
+}
+
+.cms-flex__title_h3_left .titulo,
+.cms-flex__Custom_h3_left .titulo {
+  text-align: left;
+  display: block;
+}
+.cms-flex__Custom_h3_center .titulo,
+.cms-flex__Custom_h3_left .titulo,
+.cms-flex__Custom_h2_center .titulo,
+.cms-flex__Custom_h2_left .titulo {
+  color: var(--color-1);
+}
+
+.Container01 {
+  box-shadow: 0 -4px rgb(0 0 0 / 10%) inset;
+  padding: 15px;
+}
+.Container01 .dnntitle {
+  color: #ffffff;
+  padding: 0 10px;
+  background: rgba(0,0,0,0.2);
+}
+.dnntitle {
+  text-transform: capitalize;
+  font-size: 24px;
+  line-height: 1.8;
+  font-weight: 400;
+}
+.Container01 .contentpane {
+  padding: 15px 15px 0px 10px;
+}
+.Container02 .contentpane {
+  padding: 25px 0 10px;
+  border-top: none;
+}
+.Container02 .dnntitle {
+  background: none repeat scroll 0 0 #f2f2f2;
+  border-left: 4px solid;
+}
+.Container02 .dnntitle > span {
+  padding: 0 0 0 10px;
+}
+
+
+.Container03 {
+  border: 1px solid #ddd;
+  margin: 0 0 20px;
+}
+.Container03 .dnntitle {
+  padding: 0 0 0 15px;
+  color: #fff;
+  font-size: 20px;
+  line-height: 42px;
+}
+.Container03 .contentpane {
+  padding: 22px 15px 22px;
+}
+
+.Container04 .dnntitle {
+  color: #444;
+  border-bottom: 1px solid #ddd;
+  position: relative;
+  padding: 0 0 10px 0;
+  font-size: 26px;
+}
+.Container04 .dnntitle:after {
+  content: "";
+  position: absolute;
+  width: 60px;
+  height: 3px;
+  bottom: -1px;
+  background: var(--color-1);
+  left: 0;
+}
+.Container04 .contentpane {
+  padding: 25px 0px 10px 0px;
+}
+.Container05 {
+  background: #f6f6f6;
+  border-bottom: 3px solid var(--color-1);
+}
+.Container05 .dnntitle {
+  padding: 10px 0px 0px 15px;
+  margin: 0px;
+}
+.Container05 .contentpane {
+  padding: 10px 15px 30px;
+}
+/* ----------------------------fin containers text------------------------ */
+
+
+.dnnTerms{
+  margin-top: 5rem;
+}

@@ -44,7 +44,7 @@
   .header__includes {
     height: 55px;
     padding: 0px 20px;
-    background: #fff;
+    background: #000;
   }
 }
 .header__burger {
@@ -77,7 +77,7 @@
 .header__bar {
   height: 1.5px;
   width: 100%;
-  background: var(--net-color-dark);
+  background: #fff;
   transition: 0.5s;
 }
 .header__container {
@@ -106,7 +106,7 @@
   z-index: -1;
   width: 280px;
   height: 100vh;
-  background: #fff;
+  background: #000;
 }
 .header__container--active::-webkit-scrollbar {
   width: 0px;
@@ -142,6 +142,7 @@
   width: 100%;
   display: flex;
   align-items: center;
+  color: var(--net-color-light);
 }
 @media (max-width: 1024px) {
   ._navbar__item {
@@ -172,16 +173,19 @@
   width: 100%;
   min-height: 44px;
   padding: 0;
-  padding-left: 2px;
+  margin-left: 8px;
   display: flex;
   align-items: center;
   border-left: 2px solid transparent;
-  color: var(--net-color-primary) !important;
+  color: var(--net-color-light) !important;
   gap: 7px;
+  padding-left: 0 !important;
+  border-bottom: 2px solid transparent ;
 }
 @media (max-width: 1024px) {
   ._navbar__link, ._navbar__link:visited {
     padding: 10px 16px;
+    color: #fff !important;
   }
 }
 ._navbar__link:hover, ._navbar__link:visited:hover {
@@ -196,7 +200,7 @@
   }
   ._navbar__link:hover, ._navbar__link:visited:hover, ._navbar__link + span:hover {
     border-left: 2px solid transparent;
-    color: var(--net-color-primary);
+    color: #fff !important;
     border-radius: 10px;
     background-color: rgba(193, 193, 193, 0.12);
   }
@@ -377,7 +381,7 @@
     background: #fff;
     width: -moz-max-content;
     width: max-content;
-    z-index: 1000;
+    z-index: 10;
     padding: 0;
   }
   ._navbar__submenu ._navbar__item {
@@ -393,8 +397,9 @@
   }
   ._navbar__submenu ._navbar__item ._navbar__link {
     font-size: 13px;
-    padding: 12px 20px;
+    padding: 12px 20px !important;
     width: 100%;
+    margin-left: 0 !important;
   }
   ._navbar__submenu ._navbar__item ._navbar__link .fa-angle-down:before {
     content: "\f105";
@@ -406,7 +411,7 @@
 @media (min-width: 1025px) {
   /* transparent active*/
   .header-container {
-    position: fixed;
+    position: absolute;
     z-index: 1;
     top: 0;
     height: 72px;
@@ -439,7 +444,8 @@
     color: var(--color-header-link) !important;
   }
   .header-container ._navbar__submenu ._navbar__link:hover {
-    color: var(--color-header-link-hover) !important;
+    color: #000 !important;
+    border-bottom: 2px solid #000 !important;
   }
   /* transparent disabled*/
   .header-container--transparent {

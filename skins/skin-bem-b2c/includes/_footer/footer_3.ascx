@@ -71,7 +71,7 @@
                         </a>
                 </li>
                 <li class="footer-net__item net-d-none">
-                    <a class="footer-net__link link " href="https://www.placetopay.com/web/" target="_blank" href="#">
+                    <a class="footer-net__link link " href="https://placetopay.dev/pagos-en-latam" target="_blank" href="#">
                         <!--if footer is dark: placetopay-logo-dark-background.svg -->
                         <img class="footer-net__logo" src="https://static.placetopay.com/placetopay-logo.svg">
                     </a>

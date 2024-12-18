@@ -14,7 +14,6 @@ $(document).ready(function() {
 
 //how to use?: function > "element","title"
 //example:
-// if(document.querySelector("a[aria-controls='airhotel'] span"))
 // changeTitle("a[aria-controls='airhotel'] span","Vuelos + Hotel");
 
 //---------checked extra type------------.

@@ -1,12 +1,12 @@
 <!--#include file="includes/_registers/register_init.ascx"-->
 <!--#include file="includes/_preheader/preheaderEssential.ascx"-->
 
-<dnn:DnnCssInclude Priority="15" ID="header1" runat="server" FilePath="assets/css/header--1.css" PathNameAlias="SkinPath" HtmlAttributesAsString="rel:stylesheet" />
-<dnn:DnnCssInclude Priority="15" ID="footer1" runat="server" FilePath="assets/css/footer--1.css" PathNameAlias="SkinPath" HtmlAttributesAsString="rel:stylesheet" />
+<dnn:DnnCssInclude Priority="15" ID="header1" runat="server" FilePath="assets/css/header--2.css" PathNameAlias="SkinPath" HtmlAttributesAsString="rel:stylesheet" />
+<dnn:DnnCssInclude Priority="15" ID="footer1" runat="server" FilePath="assets/css/footer--3.css" PathNameAlias="SkinPath" HtmlAttributesAsString="rel:stylesheet" />
 
 
     <div class="header-container">
-        <!--#include file="includes/_header/header_1.ascx"-->
+        <!--#include file="includes/_header/header_5.ascx"-->
         <!--#include file="includes/_preheader/functions.ascx"-->
     </div>
     
@@ -20,4 +20,4 @@
         </div>
     <!-- ___include footer___ -->
 
-    <!--#include file="includes/_footer/footer_1.ascx"-->
+    <!--#include file="includes/_footer/footer_3.ascx"-->

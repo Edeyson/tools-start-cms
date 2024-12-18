@@ -214,10 +214,10 @@
 ._navbar__btn-page:hover {
   background: rgba(128, 128, 128, 0.1098039216);
 }
-._navbar__btn-page iconify-icon{
+._navbar__btn-page i {
   transition-duration: 0.2s;
 }
-._navbar__btn-page--active iconify-icon{
+._navbar__btn-page--active i {
   transform: rotate(180deg);
 }
 ._navbar__submenu {
