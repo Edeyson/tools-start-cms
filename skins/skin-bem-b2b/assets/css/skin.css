@@ -433,7 +433,7 @@ h6 {
 
 @media screen and (min-width: 720px) {
   html {
-    font-size: 18px;
+    font-size: 16px;
   }
 }
 
@@ -1573,4 +1573,7 @@ div#dataContact li {
 
 .dnnTerms{
   margin-top: 5rem;
+}
+#dnn_ContentPane{
+  margin: 1rem 0;
 }
