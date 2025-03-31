@@ -1,12 +1,12 @@
 <script>
 
-    if(!localStorage.getItem("recentSearch")){
+    if(localStorage.getItem("recentSearch")){
         if(document.querySelector(".DnnModule-recentSearchesFunction")){
-            document.querySelector(".DnnModule-recentSearchesFunction").style.display="none"
+            document.querySelector(".DnnModule-recentSearchesFunction").style.display="block"
         }
     }
 </script>
 
 <script>
-    localStorage.getItem("recentSearch")||document.querySelector(".DnnModule-recentSearchesFunction")&&(document.querySelector(".DnnModule-recentSearchesFunction").style.display="none");
+    localStorage.getItem("recentSearch")&&document.querySelector(".DnnModule-recentSearchesFunction")&&(document.querySelector(".DnnModule-recentSearchesFunction").style.display="block");
 </script>
