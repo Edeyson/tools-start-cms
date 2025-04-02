@@ -1257,6 +1257,50 @@ span#dnn_ctr36960_Login_Login_DNN_lblLoginRememberMe {
   color: #fff;
 
 }
+.sectionInfoBody{
+  display: grid;
+  grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+  min-height: 150px;
+  align-items: center;
+}
+@media(max-width:1024px){
+  .sectionInfoBody{
+      row-gap: 20px;
+      padding: 10px 0;
+  }
+}
+@media(max-width:550px){
+  .sectionInfoBody>div{
+      padding: 10px 0;
+  }
+}
+.sectionInfoBody>div{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  text-align: center;
+}
+.sectionInfoBody>div>p{
+  margin-bottom: 0;
+}
+
+.sectionInfoBody>div>h2:nth-child(2){
+  font-size: 1.2rem;
+  margin: 0;
+}
+
+.sectionInfoBody>div>p:nth-child(3){
+  display: block;
+  max-width: 276px;
+  text-align: center;
+}
+.sectionInfoBody>div>a{
+  font-weight: 500;
+  font-size: 16px;
+  color: #007BFF;
+}
 
 .sectionInfo-2 .sectionInfoBody-2,
 .sectionInfo-3 .sectionInfoBody-3 {
