@@ -1,0 +1,2190 @@
+:root{
+    /* options */
+    --SF-primary-color:#0a75c9;
+    --SF-secondary-color:#f4b60d;
+    --SF-tertiary-color:#e5e5ea;
+    --SF-font-size-base: 16px;
+    --SF-font-weight-base: 400;
+    --SF-padding-base: 15px;
+    --SF-border-radius-base: 5px;
+    --SF-font-family-primary:
+    'Arial', sans-serif;
+    --SF-font-family-secondary:
+    'Helvetica', sans-serif;
+    
+    /* colorToAply */
+    --SF-tab-color: #007bff;
+    --SF-tab-color-icon: #007bff;
+    --SF-tab-bg: #fff;
+    --SF-tab-border: #fff;
+
+    --SF-tab-color-hover: #ffffff;
+    --SF-tab-color-icon-hover: #ffffff;
+    --SF-tab-bg-hover: #007bff;
+    --SF-tab-border-hover: #007bff;
+    
+    --SF-color-button: #fff;
+    --SF-background-button: #007bff;
+    --SF-color-button-hover: #007bff;
+    --SF-background-button-hover: #b7c9ff;
+
+    --SF-color-title : #000;
+    --SF-color-icon: #999999;
+    --SF-color-icon-hover: #666666;
+    --SF-color-typography: #000000;
+    --SF-color-background: #ffffff;
+    --SF-color-bg-border: #f2f2f2;
+}
+div#AirTitle {
+    margin: 0 0 12px 0;
+}
+div#AirTitle>div{
+    padding: 0;
+}
+.divAirHotelBaggageIncluded.form-group label,
+.upTripType.upTripType-control label {
+    font-size: 13px!important;
+}
+.upTripType>div {
+    width: max-content;
+    padding: 0 4px;
+}
+.ui-datepicker .ui-datepicker-prev span,
+.ui-datepicker .ui-datepicker-next span {
+    margin-left: -8px;
+    margin-top: -9px;
+}
+
+td.ui-datepicker-unselectable.ui-state-disabled.undefined span {
+    color: #c4c4c4 !important;
+    font-weight: 400;
+    font-size: 12px;
+}
+
+table.ui-datepicker-calendar span {
+    color: #353535;
+}
+
+#divHotelTogglePromoCode .col-xs-12 {
+    padding-left: 0;
+    padding-right: 0;
+}
+
+#divAirHotelBaggageIncluded,
+#divHotelTogglePromoCode {
+    margin: 0;
+}
+
+.fdsHotelDetails {
+    margin: 0
+}
+
+.divAirBaggageIncluded.form-group {
+    display: block;
+    margin-right: 34px;
+}
+
+.form-group.special-options {
+}
+
+#divAirTogglePromoCode .col-lg-3 {
+    width: 35%;
+}
+
+#divAirHotelBaggageIncluded .col-md-100 {
+    padding: 0;
+}
+
+.divAirHotelBaggageIncluded {
+    float: left;
+    padding-right: 34px;
+}
+
+.opcion-1 .disabled {
+    background-color: #eee !important;
+}
+
+.no-gutter div[class*='col-']:nth-child(1) {
+    padding-right: 0;
+}
+
+.no-gutter div[class*='col-']:nth-child(2) {
+    padding-left: 0;
+}
+
+.min-padding>[class*='col-'] {
+    padding-right: 1px;
+    padding-left: 1px;
+}
+
+.center {
+    text-align: center;
+}
+
+.opcion-1 .multidest-flight {
+    font-weight: 400;
+    font-size: 13px;
+    color: #51514f;
+}
+
+.air-multiple-opt a {
+    color: var(--SF-color-button);
+    font-size: 14px;
+    font-weight: 300;
+    background: var(--SF-background-button);
+    padding: 5px;
+    border-radius: 8px;
+}
+@media (max-width:1024px) {
+    div#AirCarDatesPassengers+div>div>div {
+        margin: 0;
+    }
+    .air-multiple-opt {
+        display: flex;
+        justify-content: space-evenly;
+    }
+    [id*="TogglePromoCode"]>div>.form-group.promo-code-group {
+        margin-bottom:7px
+    }
+    [id*="SpecialOpt"] select.special-options-input {
+        border-left: 0rem solid #e8e8e800!important;
+    }
+    .form-group.special-options {
+        margin-bottom: 7px;
+    }
+    [id*="SpecialOpt"] [class*="SpecialOptContent"] >div>div {
+        padding-right: 0;
+    }
+    .btnSearch {
+        width: 100%;
+        height: 48px;
+        font-size: 20px !important;
+    }
+    .btnSearch {
+        width: 100%;
+        height: 48px;
+        font-size: 17px !important;
+        border-radius: 8px;
+    }
+        
+    ul#widget-tabs span {
+        width: max-content;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .product-title-container>h3 {
+        display: block!important;
+    }
+    .opcion-1{
+        max-width: 500px;
+        margin: auto;
+    }
+    ul#widget-tabs::-webkit-scrollbar {
+        width: 0px;
+    }
+    ul#widget-tabs::before {
+        position: absolute;
+    }
+}
+
+
+@media (min-width:750px) and (max-width:1024px) {
+
+    .opcion-1 div[id*="DatesPassengers"]>div,
+    .opcion-1 div[id*="DatesRooms"]>div,
+    div#CarDates>div {
+        width: 100%;
+    }    
+
+}
+
+
+
+
+.opcion-1 .widget-tabs {
+    border-bottom: none !important;
+    margin: 0;
+}
+
+.opcion-1 .widget-tabs-container {
+    position: relative;
+    overflow: hidden;
+}
+
+.opcion-1 .widget-tab-container {
+    padding: 20px 10px;
+    border-radius: 8px;
+    border: none;
+}
+
+.opcion-1 .product-title {
+    text-align: left;
+    margin: 0;
+    color: var(--widget-title);
+    margin-bottom: 8px;
+    font-size: 18px;
+    line-height: 28px;
+    font-weight: 500;
+}
+@media (max-width:780px) {
+    #AirTitle .product-title {
+        margin-bottom: 0;
+        margin-left: -7px;
+    }
+}
+
+
+/*Txt inputs - Date Inputs*/
+
+.opcion-1 .org-input,
+.opcion-1 .dest-input,
+.opcion-1 .checkindate-input,
+.opcion-1 .checkoutdate-input,
+.opcion-1 .hotel-rooms-input,
+.opcion-1 .promocode-input,
+.opcion-1 .accountcode-input,
+.opcion-1 .airhotel-rooms-input,
+.opcion-1 .bushotel-rooms-input,
+.opcion-1 .air-passengers-input,
+.opcion-1 .bus-passengers-input,
+.opcion-1 .special-options-input,
+.opcion-1 input#txtAirCarNumberPassenger {
+    height: 48px;
+    background-color: #f7f7fa;
+    box-shadow: none;
+    border: 1px solid #eee!important;
+}
+
+/* .opcion-1 .hotel-rooms-input,
+.opcion-1 .airhotel-rooms-input,
+.opcion-1 .bushotel-rooms-input,
+.opcion-1 .air-passengers-input,
+.opcion-1 .bus-passengers-input,
+input#txtAirCarNumberPassenger {
+    text-align: right;
+} */
+
+.opcion-1 .dest-label,
+.opcion-1 .org-label,
+.opcion-1 .checkindate-label,
+.opcion-1 .checkoutdate-label,
+.opcion-1 .promocode-label {
+    /* margin-bottom: 2px; */
+}
+
+.opcion-1 .form-control {
+    font-size: 13px;
+    font-weight: 400;
+}
+
+.opcion-1 .form-control[readonly] {
+    background-color: #f7f7fa;
+    font-size: 13px;
+    font-weight: 400;
+}
+
+.opcion-1 .checkindate-input,
+.opcion-1 .checkoutdate-input,
+.opcion-1 .dest-input,
+.opcion-1 .promocode-input {
+    position: relative;
+    border: 1px solid #e6e6e6;
+    padding-right: 1.8rem;
+    padding-left: 0;
+}
+
+.opcion-1 .accountcode-input {
+    position: relative;
+    padding-left: 16px;
+}
+
+.opcion-1 .lblDates,
+.opcion-1 .lblRooms,
+.opcion-1 .lblPassengers {
+    font-weight: 400;
+    display: inline-block;
+    /* margin-bottom: 2px; */
+}
+
+
+/*.opcion-1 .custom-room-input {
+    border-right: 0;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+    padding-left: 40px;
+    box-shadow: none;
+}
+
+.opcion-1 .custom-guests-input {
+    border-left: 0;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+    padding-left: 40px;
+    box-shadow: none;
+}
+*/
+
+.opcion-1 .fixColumns100 {
+    width: 100%;
+    margin-bottom: 8px;
+}
+
+.opcion-1 .fixColumns50 {
+    width: 50%;
+    margin-bottom: 8px;
+}
+
+.opcion-1 .rooms-control {
+    position: initial !important;
+}
+
+.opcion-1 .icon-input-group {
+    position: relative;
+}
+
+.opcion-1 .input-icon {
+    position: absolute;
+    font-size: 14px;
+    top: 50%;
+    margin-top: -7px;
+}
+
+.opcion-1 .input-icon-left {
+    left: 0.6rem;
+}
+
+@media (max-width:480px) {
+    .opcion-1 .input-icon-left {
+        left: 1.4rem;
+    }
+}
+
+.opcion-1 .input-icon-right {
+    left: inherit;
+    right: 1.2rem;
+}
+
+.opcion-1 .divAirSpecialOptions,
+.opcion-1 .divBusSpecialOptions {
+    margin-top: 8px;
+}
+
+.opcion-1 .special-options-select label {
+    margin-bottom: 0;
+}
+
+.opcion-1 .special-options-select {
+    margin-bottom: 10px;
+}
+
+.opcion-1 .promocode-btn {
+    font-weight: 500;
+    color: var(--SF-color-typography)!important;
+    text-decoration: none;
+    text-transform: capitalize;
+}
+
+.opcion-1 input[type="radio"] {
+    width: 14px;
+    height: 14px;
+    background-color: var(--tabs-color-1);
+    border-radius: 10px;
+    margin: 0;
+}
+
+@media (min-width: 1025px) {
+    div#divCarTogglePromoCode {
+        margin: 0;
+    }
+    div#divCarTogglePromoCode>div{
+        width:100%;
+    }
+    div#divCarPromoCode {
+        margin-top: 10px;
+    }
+    #divAirUpTripType .col-lg-5:nth-child(1) {
+        width: 36%;
+        margin-top: -15px;
+    }
+    ul.ui-menu.ui-widget.ui-widget-content.ui-autocomplete.ui-front * {
+        font-size: 12px!important;
+    }
+    .opcion-1 .widget-tabs{
+        display: flex;
+        padding-top: 10px;
+        flex-wrap: wrap;
+    }
+    .opcion-1 .widget-tabs .fa {
+        margin-right: 6px;
+        margin-left: 6px;
+        color: var(--SF-tab-color-icon);
+    }
+    .opcion-1 .widget-tabs a:hover .fa {
+        margin-right: 6px;
+        margin-left: 6px;
+        color: var(--SF-tab-color-icon-hover);
+    }
+    #divAirHotelSpecialOptionsControl .promocode-btn {
+        margin: 5px -15px;
+    }
+}
+
+
+
+
+
+
+/*ICONS override*/
+
+.promocode-btn .fa {
+    color: var(--widget-text) !important;
+}
+
+
+.opcion-1 .widget-tabs-container li.active .fa {
+    color: var(--SF-tab-color-icon-hover);
+    background: var(--SF-tab-bg-hover);
+}
+
+.opcion-1 .rooms-control .fa-hotel:before,
+.opcion-1 .rooms-control .fa-bed:before {
+    content: "\f236";
+}
+
+.opcion-1 .rooms-control .fa-user:before {
+    content: "\f007";
+}
+
+.hotel-checkindate .fa-calendar:before {
+    content: "\f073";
+}
+
+.opcion-1 .destination-group .fa-map-marker:before {
+    content: "\f041";
+}
+
+.opcion-1 .promo-code-group .fa-tag:before {
+    content: "\f02b";
+}
+
+
+#divPaxPopup,
+#divPaxRoomPopup {
+    display: none;
+    z-index: 999999 !important;
+}
+
+.popup-control {
+    position: absolute;
+    width: 100%;
+    height: 50px;
+    cursor: pointer;
+    z-index: 100;
+}
+
+.popup-control-btn {
+    display: block;
+    height: 100%;
+    width: 100%;
+}
+
+.pop-up-control-container {
+    width: 300px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0 2px 4px;
+    background-color: #fff;
+    padding: 12px;
+}
+
+.top-arrow {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    text-align: center;
+    color: #fff;
+    top: -18px;
+}
+
+.pop-up-content p {
+    margin-bottom: 0;
+}
+
+.pop-up-control-container .pax-label-info p {
+    font-weight: bold;
+    font-size: 15px;
+    margin-bottom: 0;
+}
+
+.pop-up-control-container .pax-label-info span {
+    color: grey;
+}
+
+.pop-up-control-container .pax-number-control {
+    margin-bottom: 16px;
+}
+
+.pop-up-control-container .pax-number-block {
+    margin-bottom: 14px;
+}
+
+.pop-up-control-container .btn-pax-control {
+    border-top: 1px solid #aaa;
+}
+
+.pop-up-control-container .room-number-title {
+    border-bottom: solid 1px #f5f5f5;
+    padding-top: 1rem;
+    margin-bottom: 0.8rem;
+}
+
+.pop-up-control-container .room-number-title-alt {
+    border-bottom: solid 1px #f5f5f5;
+    border-top: solid 1px #f5f5f5;
+    padding-top: 1rem;
+    margin-bottom: 0.8rem;
+}
+
+.pop-up-control-container .room-number-title-alt h4,
+.pop-up-control-container .room-number-title h4 {
+    font-size: 16px;
+    color: #888;
+}
+
+.pop-up-control-container .childrens-age-control {
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+#divPaxPopup,
+#divPaxRoomPopup {
+    display: none;
+    z-index: 999999 !important;
+}
+
+.popup-control {
+    position: absolute;
+    width: 100%;
+    height: 50px;
+    cursor: pointer;
+    z-index: 100;
+}
+
+.popup-control-btn {
+    display: block;
+    height: 100%;
+    width: 100%;
+}
+
+.pop-up-control-container {
+    width: 300px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0 2px 4px;
+    padding: 25px;
+}
+.popup_wrapper.popup_wrapper_visible {
+    margin-top: 25px;
+    border-radius: 10px;
+}
+.top-arrow {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    text-align: center;
+    color: #fff4f4;
+    top: -18px;
+    display: none;
+}
+
+.pop-up-content p {
+    margin-bottom: 0;
+}
+
+.pop-up-control-container .pax-label-info p {
+    font-weight: bold;
+    font-size: 16px;
+    margin-bottom: 0;
+}
+
+.pop-up-control-container .pax-label-info span {
+    color: grey;
+}
+
+.pop-up-control-container .pax-number-control {
+    margin-bottom: 16px;
+}
+
+.pop-up-control-container .pax-number-block {
+    margin-bottom: 14px;
+}
+
+.pop-up-control-container .btn-pax-control {
+    border-top: 1px solid #aaa;
+}
+
+.pop-up-control-container .room-number-title {
+    border-bottom: solid 1px #f5f5f5;
+    margin-bottom: 0.8rem;
+}
+
+.pop-up-control-container .room-number-title-alt {
+    border-bottom: solid 1px #f5f5f5;
+    border-top: solid 1px #f5f5f5;
+    padding-top: 1rem;
+    margin-bottom: 0.8rem;
+}
+
+.pop-up-control-container .room-number-title-alt h4,
+.pop-up-control-container .room-number-title h4 {
+    font-size: 16px;
+    color: var(--SF-primary-color);
+    font-weight: 500;
+}
+
+.pop-up-control-container .childrens-age-control {
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.pop-up-content .input-group-btn button {
+    border: none;
+    background: var(--SF-background-button);
+    padding: 10px;
+    color: var(--SF-color-button);
+    border-radius: 6px!important;
+    margin: 0!important;
+}
+.pop-up-control-container .pop-up-content button[disabled], 
+.pop-up-control-container .pax-number-block button[disabled] {
+    background: #b8b4b480;
+    color: #4b4b4b;
+}
+.pop-up-content input,
+.room-pax-control input {
+    text-align: center;
+    background: #fff!important;
+    border: none;
+    box-shadow: none;
+    text-align: center;
+}
+#btnClosePaxRoomPopup, .pop-up-action-flex #btbClosePaxPopup {
+    width: 100%;
+    height: 40px;
+    font-size: 16px;
+    font-weight: 400;
+    margin-top:15px
+}
+
+
+
+/* Preload image search */
+
+.opcion-1 #divPreload {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.14);
+    z-index: 999999;
+    /* opacity: 0.5; */
+    text-align: center;
+    padding-top: 10%;
+    color: var(--tabs-color-1);
+}
+
+.opcion-1 .divPreload {
+    background-color: rgba(0, 0, 0, 0.4) !important;
+}
+.opcion-1 #divPreload p {
+    color: var(--tabs-color-1);
+    text-align: center;
+    font-weight: 600;
+    font-size: 20px;
+}
+
+
+.opcion-1 .divAirTripTypeRT,
+.opcion-1 .divAirTripTypeOW,
+.opcion-1 .divAirTripTypeMD,
+.opcion-1 .divBusTripTypeRT,
+.opcion-1 .divBusTripTypeOW {
+    display: flex;
+    align-items: center;
+    height: 20px;
+    gap: 2px;
+}
+
+.opcion-1 .divAirTripTypeRT label,
+.opcion-1 .divAirTripTypeOW label,
+.opcion-1 .divAirTripTypeMD label,
+.opcion-1 .divBusTripTypeRT label,
+.opcion-1 .divBusTripTypeOW label {
+    margin: 4px 0 0 4px;
+    line-height: normal;
+    font-size: 13px;
+    font-weight: 300;
+}
+
+.opcion-1 .air-multiple-opt {
+    margin-bottom: 10px;
+}
+
+.opcion-1 .fdsBusTripType {
+    margin-bottom: 16px;
+}
+
+.opcion-1 .mobile-tabs {
+    position: relative;
+    overflow: hidden;
+}
+
+.opcion-1 .mobile-tabs-nav {
+    display: block;
+    position: absolute;
+    top: 7px;
+    right: 0px;
+    background-color: #aaa;
+    text-decoration: none;
+    padding: 10px;
+    width: 28px;
+    height: 40px;
+    cursor: pointer;
+    font-size: 2.1rem;
+    text-align: center;
+    color: var(--tabs-color-1);
+}
+
+.opcion-1 .mobile-tabs-nav span {
+    line-height: 0;
+    position: absolute;
+}
+
+.opcion-1 .mobile-tabs-next span {
+    left: 5px;
+    top: 20px;
+}
+
+.opcion-1 .mobile-tabs-prev span {
+    -moz-transform: rotate(180deg);
+    -ms-transform: rotate(180deg);
+    -webkit-transform: rotate(180deg);
+    transform: rotate(180deg);
+    left: 5px;
+    top: 23px;
+}
+
+.opcion-1 .mobile-tabs-content {
+    overflow-y: scroll;
+}
+
+.opcion-1 .mobile-tabs .ul-mobile-tabs li {
+    background: none;
+    border: none;
+    margin-right: 2px;
+}
+
+.opcion-1 .ul-mobile-tabs li {
+    float: left;
+    background-color: #f8f8f8;
+    border-right: 1px solid #eee;
+}
+
+.opcion-1 .ul-mobile-tabs li:first-child {
+    margin-left: 0px;
+}
+
+.opcion-1 .ul-mobile-tabs li:last-child {
+    border-right: none !important;
+}
+
+.opcion-1 .title-mobile-autocomplete {
+    position: relative;
+}
+
+
+
+.opcion-1 .title-mobile-container h2 {
+    font-size: 1.1rem;
+    margin-bottom: 0;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+}
+
+.opcion-1 .aMobileAutocompleteCancel {
+    position: absolute;
+    font-size: 1rem;
+    top: 50%;
+    margin-top: -9px;
+    right: 0.8rem;
+    color: #111111;
+}
+
+.ui-datepicker-close .fa,
+.opcion-1 .aMobileAutocompleteCancel .fa {
+    color: #111111;
+    font-size: 1.3rem;
+}
+
+.opcion-1 .input_mobile_autocomplete {
+    background-color: #F1F1F2;
+    border: none;
+    border-radius: 10px;
+    height: 34px;
+}
+
+#divAirHotelBaggageIncluded,
+#divHotelTogglePromoCode {
+    margin-top: 0px;
+}
+
+@media (max-width: 1024px) {
+    .opcion-1 .upTripType {
+        margin-bottom: 10px;
+    }
+    .opcion-1 .widget-tabs li a {
+        font-size: 12px;
+        padding: 0;
+        border: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 8px;
+        color: var(--widget-text);
+        font-weight: 400;
+    }
+    .opcion-1 .widget-tabs .fa {
+        font-size: 24px;
+        margin-right: 6px;
+        margin-left: 6px;
+        height: 60px;
+        width: 60px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 12px;
+        box-shadow: 0 6px 10px 0 #d8d8d8;
+        color: var(--SF-tab-color-icon);
+        background: var(--SF-tab-bg);
+    }
+
+    .opcion-1 .widget-tabs li.active a {
+        background-color: transparent;
+        border:none
+    }
+    .opcion-1 .widget-tabs-container li.active .fa {
+        box-shadow: none;
+    }
+    /* icon cars */
+    .opcion-1 .widget-tabs i.fa.fa-car {
+        font-size: 21px;
+    }
+    .opcion-1 .widget-tabs-container label, div#AirHotelDatesRooms span, div#divExtraDates span, .opcion-1 .lblPassengers, #HotelDatesRooms .lblDates, #NetacticaAirhotel .lblDates, #NetacticaExtra .lblDates, #HotelDatesRooms .lblRooms, #NetacticaAirhotel .lblRooms, #NetacticaExtra .lblRooms {
+        font-weight: 400;
+        color: var(--SF-color-typography);
+        font-size: 13px;
+    }
+}
+
+div#divAirHotelBaggageIncluded>div {
+    padding-left: 0;
+}
+
+.pop-up-content .input-group-btn button {
+    padding: 9px;
+}
+
+@media (max-width: 1024px) {
+    .col-xs-12.col-sm-12.col-md-12.col-lg-12.childrens-age-control {
+        display: flex;
+        flex-direction: column;
+    }
+    .col-xs-12.col-sm-12.col-md-12.col-lg-12.childrens-age-control>div>div {
+        width: 100%;
+    }
+    div#divAirHotelBaggageIncluded>div {
+        margin-left: -10px;
+    }
+    .opcion-1 .widget-tab-container {
+        box-shadow: none;
+        margin-bottom: 20px;
+        padding: 20px 15px;
+        box-shadow: 0 3px 6px 0 rgb(0 0 0 / 16%);
+        margin: 10px;
+        margin-top: 0;
+        padding-top: 13px;
+    }
+    #divExtraTogglePromoCode .col-lg-4,
+    #divCarTogglePromoCode .col-lg-4,
+    #divAirHotelTogglePromoCode .col-lg-4 {
+        padding-left: 4px !important;
+        padding-right: 4px !important;
+    }
+    #divExtraTogglePromoCode .col-lg-4,
+    #divCarTogglePromoCode .col-lg-4,
+    #divAirHotelTogglePromoCode .col-lg-4,
+    #divAirTogglePromoCode .col-lg-3 {
+        width: 100%;
+        padding-left: 0;
+        padding-right: 0;
+    }
+    
+    #divAirCarSpecialOptionsControl>div,#divAirCarTogglePromoCode>div,#divAirTogglePromoCode, #divAirHotelBaggageIncluded, #divHotelTogglePromoCode, #divAirSpecialOptionsControl>div, #divAirHotelSpecialOptionsControl>div,div#divBusSpecialOptionsControl>div{
+        margin-left: -12px;
+        margin-right: -12px;
+    }
+    #divAirHotelBaggageIncluded,
+    #divHotelTogglePromoCode {
+        margin-top: 15px;
+    }
+    #divMobileTabsContent .widget-tabs {
+        margin-bottom: 6px;
+    }
+    .opcion-1 .widget-tabs-container {
+        padding: 0;
+    }
+    .opcion-1 .multidest-flight {
+        display: block;
+        margin-left: -14px;
+        margin-bottom: 8px;
+        margin-top: 10px;
+        text-transform: uppercase;
+    }
+    .hotel-destination .input-icon-left {
+        left: 0.8rem;
+    }
+    #BtnHotel .col-xs-12 {
+        padding-left: 2px;
+        padding-right: 2px;
+    }
+    .opcion-1 .form-control[readonly],
+    .opcion-1 .org-input,
+    .opcion-1 .dest-input,
+    .opcion-1 .checkindate-input,
+    .opcion-1 .checkoutdate-input,
+    .opcion-1 .hotel-rooms-input,
+    .opcion-1 .promocode-input,
+    .opcion-1 .accountcode-input,
+    .opcion-1 .airhotel-rooms-input,
+    .opcion-1 .bushotel-rooms-input,
+    .opcion-1 .air-passengers-input,
+    .opcion-1 .aircar-passengers-input,
+    .opcion-1 .bus-passengers-input,
+    .opcion-1 .special-options-input,
+    .opcion-1 input#txtAirCarNumberPassenger {
+        border-radius: 10px;
+        height: 48px;
+        border-left: 3.3rem solid #e8e8e800!important;
+        font-weight: 400;
+        border: none;
+        font-size: 16px !important;
+        background-color: #f2f5f9;
+        box-shadow: none;
+    }
+    .opcion-1 .hotel-rooms-input {
+        text-align: left;
+        font-style: normal;
+        font-weight: 600;
+    }
+    #divBusDatesPassengers .col-lg-3,
+    #divAirCarPassengers,
+    .fdsBusDetails,
+    #divAirPassengers {
+        width: 100%;
+    }
+    .airFlexDates-label {
+        display: inline-block !important;
+    }
+    #divAirCarBaggageIncluded,
+    #divAirCarFlexDates,
+    .fdsBusTripType .col-xs-6,
+    #divBusCities .col-xs-12,
+    #BusHotelDatesPassengers .col-xs-6,
+    #divBusDatesPassengers .col-xs-6,
+    #divExtraDestination .col-xs-12,
+    #AirCarDatesPassengers .col-xs-6,
+    #divAirMultiDestination .col-xs-12,
+    #divAirCarCities .col-xs-12,
+    #BtnCar .col-xs-12,
+    #BtnAir .col-xs-12,
+    #BtnBusHotel .col-xs-12,
+    #BtnAirHotel .col-xs-12,
+    #BtnExtras .col-xs-12,
+    #BtnBus .col-xs-12,
+    #BtnBusHotel .col-xs-12,
+    #BtnAirCar .col-xs-12,
+    #AirHotelDatesRooms .col-xs-6,
+    #divAirHotelCities .col-xs-12,
+    #CarTitle .col-xs-12,
+    #AirHotelTitle .col-xs-12,
+    #bushotelTitle .col-xs-12,
+    #AirCarTitle .col-xs-12,
+    #divAirFlexDates,
+    #divAirUpTripType .col-xs-12,
+    #AirTitle .col-xs-12,
+    #ExtraTitle .col-xs-12,
+    #divAirPassengers,
+    #divExtraDates .col-xs-6,
+    #AireDatesPassengers .col-xs-6,
+    #divAirCities .col-xs-12,
+    #divBusHotelCities .col-xs-12,
+    #HotelTitle .col-xs-12,
+    #BusTitle .col-xs-12,
+    #HotelDestination .col-xs-12,
+    #HotelDatesRooms .col-xs-6,
+    #divCarAirports .col-xs-12,
+    #divCarAirports .col-xs-6,
+    #CarDates .col-xs-7,
+    #CarDates .col-xs-5,
+    #divBusTogglePromoCode .col-lg-4,
+    #divBusHotelTogglePromoCode .col-lg-4,
+    #divAirBaggageIncluded {
+        padding-left: 2px;
+        padding-right: 2px;
+    }
+    .lblAirCarDates,
+    .lblDates,
+    .lblRooms {
+        margin-left: -10px;
+    }
+    #divAirMultiDestination .lblDates,
+    #divAirMultiDestination .lblRooms {
+        margin-left: 0px;
+    }
+    .opcion-1 .lblDates,
+    .opcion-1 .lblRooms,
+    .opcion-1 .lblPassengers,
+    .opcion-1 .lblAirCarDates {
+        font-size: 13px;
+        font-weight: 400;
+        display: block;
+    }
+    .opcion-1 .widget-tabs-container label {
+        font-size: 13px;
+        font-weight: 400;
+    }
+    .opcion-1 .input-icon {
+        font-size: 1.2rem;
+        margin-top: -9px;
+    }
+    select,
+    input {
+        font-size: 16px !important;
+        touch-action: none !important;
+    }
+    .popup_wrapper {
+        top: 0px !important;
+        left: 0px !important;
+        height: 100% !important;
+    }
+    .pop-up-control-container {
+        width: 100% !important;
+        height: 100% !important;
+    }
+    .pop-up-main {
+        max-height: 100%;
+        visibility: visible;
+        top: 0 !important;
+        left: 0 !important;
+        position: fixed;
+        width: 100%;
+        height: 100%;
+        background-color: #fff;
+    }
+    .pop-up-content {
+        padding-left: 16px;
+        padding-right: 16px;
+        position: relative;
+        z-index: 5;
+        height: 620px;
+        overflow-y: scroll;
+        padding-top: 15px;
+    }
+    .pop-up-title {
+        background-color: #F3F3F3;
+        border-bottom: 2px solid #F0EFEF;
+        position: relative;
+        padding-top: 0.5rem;
+        padding-bottom: 0.5rem;
+    }
+    .pop-up-title h2 {
+        margin-bottom: 0;
+    }
+    .pop-up-close {
+        position: absolute;
+        font-size: 1.3rem;
+        top: 50%;
+        margin-top: -9px;
+        right: 2.6rem;
+        color: #fff;
+    }
+    .pop-up-close:hover {
+        text-decoration: none !important;
+        color: #fff;
+    }
+    .pop-up-action {
+        bottom: 0;
+        width: 100%;
+        position: fixed;
+        z-index: 10;
+        background-color: white;
+        padding: 15px !important;
+    }
+    .pop-up-content-scrool {
+        display: block !important;
+    }
+    .no-scroll {
+        overflow: hidden;
+    }
+    .opcion-1 .form-inline .aMobileAutocompleteCancel {
+        position: fixed;
+        top: 15px;
+        right: 20px;
+        font-size: 20px;
+    }
+    .opcion-1 .form-inline .aMobileAutocompleteCancel .fa-x {
+        color: black;
+    }
+
+    .divAirBaggageIncluded.form-group {
+        margin-right: 0;
+    }
+    .divAirHotelBaggageIncluded,
+    .divAirBaggageIncluded {
+        margin-bottom: 3px;
+    }
+    #BtnHotel {
+        margin-top: 5px;
+    }
+    .divAirHotelBaggageIncluded.form-group,
+    .opcion-1 .upTripType {
+        display: flex;
+        align-items: center;
+        gap: 3px;
+        margin-left: 0;
+        padding: 0 10px;
+    }
+    .divAirHotelBaggageIncluded.form-group>*,
+    div#divCarChangeReturn>div,
+     .opcion-1 .upTripType>*,
+    .divAirBaggageIncluded.form-group>* {
+        padding: 0 0 0 0; margin: 0; 
+    }
+    .col-xs-4.col-sm-4.col-md-4.col-lg-4.divAirTripTypeRT {
+        padding-left: 13px;
+    }
+    div#divAirCities,
+    div#AireDatesPassengers {
+        display: -webkit-box;
+        display: flex;
+        flex-wrap: wrap;
+        margin-right: -15px;
+        margin-left: -15px;
+    }
+    .form-group.form-inline>.destination-mobile-group,
+    input#txtMobileAutocomplete {
+        width: 100%;
+    }
+    .row.pax-number-control>div,
+    .row.pax-number-block>div {
+        width: 47%;
+    }
+    .row.pax-number-control>div .input-group,
+    .row.pax-number-block>div .input-group {
+        display: inline-table;
+    }
+    div#divTitleDatePicker>div {
+        justify-content: center;
+    }
+    div#divAirBaggageIncluded,
+    #divAirHotelBaggageIncluded>div {
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+        margin-bottom: 5px;
+    }
+    #divAirHotelBaggageIncluded input {
+        margin-top: -3px;
+    }
+    
+}
+
+.pop-up-action {
+    padding: 15px 0;
+    border-top: solid 1px #f5f5f5;
+}
+
+.pop-up-action-flex {
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.pop-up-content-scrool {
+    display: none;
+}
+
+.divRoomChildAge {
+    margin-top: 10px;
+}
+
+.opcion-1 select,
+.pop-up-control-container select {
+    padding-left: 12px !important;
+}
+
+.input-mobile-control {
+    width: 100%;
+    height: 48px;
+    position: absolute;
+    z-index: 20;
+}
+
+#divAutoCompleteMobileContainer {
+    display: none;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    bottom: 0px;
+    width: 100%;
+    height: 100%;
+    background-color: #fff;
+    touch-action: none !important;
+    z-index: 99999;
+}
+
+#AirHotelDatesRooms,
+.fdsHotelDetails {
+    margin-bottom: 0px;
+}
+
+.air-remove-flight,
+.air-add-flight {
+    color: var(--tabs-color-1);
+    font-weight: 500;
+}
+
+#ui-datepicker-div a.ui-state-default {
+    font-weight: 300;
+    color: #000;
+    font-size: 12px;
+}
+#btnClosePaxRoomPopup,
+#btbClosePaxPopup {
+    background: var(--SF-background-button);
+    color: var(--SF-color-button);
+    border-radius: 30px;
+    border: 2px solid var(--SF-background-button);
+}
+
+#btnClosePaxRoomPopup:hover,
+#btbClosePaxPopup:hover {
+    background: var(--SF-background-button-hover);
+    color: var(--SF-color-button-hover);
+    border: 2px solid var(--SF-color-button-hover);
+    border-radius: 30px;
+}
+.divAirCarSpecialOptContent .special-options-select label,
+.divBusSpecialOptContent .special-options-select label,
+.divAirHotelSpecialOptContent .special-options-select label,
+.divAirSpecialOptContent .special-options-select label {
+    margin-top: 8px;
+}
+
+.btnSearch {
+    background: var(--SF-background-button);
+    color: var(--SF-color-button);
+    font-weight: 400;
+    font-size: 18px;
+    margin-top: 10px;
+}
+
+.btnSearch:hover {
+    background-color: var(--SF-background-button);
+    color: var(--SF-color-button);
+    border: 1px solid var(--SF-background-button);
+}
+
+
+
+.divCarTimePickup .fa,
+.divCarTimeDropoff .fa {
+    left: 0.3rem;
+}
+div#divAirFlexDates .divAirFlexDates,
+div#divAirCarFlexDates .divAirCarFlexDates.form-group{
+    display: none!important;
+}
+@media (max-width: 1024px) {
+    select#ddlCarTimePickup, select#ddlCarTimeDropoff {
+        font-size: 12px!important;
+        padding-left: 13px!important;
+    }
+
+    div#divAirFlexDates,div#divAirCarFlexDates{
+        display: none;
+    }
+    .opcion-1 .widget-tabs-container .upTripType label {
+        font-size: 12px;
+        margin: 0;
+    }
+    .opcion-1 .widget-tabs-container .upTripType .col-xs-4:nth-child(2) {
+        width: 26%;
+        padding: 0px;
+    }
+    .opcion-1 .widget-tabs-container .upTripType .col-xs-4:first-child {
+        width: 37%;
+        padding-right: 0px;
+    }
+    .opcion-1 .widget-tabs-container .upTripType .col-xs-4:last-child {
+        width: 37%;
+        padding: 0px;
+    }
+    .opcion-1 .widget-tabs-container {
+        padding: 0;
+    }
+    #ui-datepicker-div .ui-state-default,
+    #ui-datepicker-div .ui-widget-content .ui-state-default,
+    #ui-datepicker-div .ui-widget-header .ui-state-default {
+        font-weight: 400 !important;
+    }
+    div#divBusSpecialOptionsControl {
+        margin-bottom: 4px;
+    }
+    #divBusUpTripType .upTripType>div {
+        padding-right: 5px;gap: 2px;
+    }
+    [class*="TogglePromoCodePanel"].form-group{
+        margin:7px 0
+    }
+}
+
+@media (min-width: 1025px) {
+
+    .col-md-50 {
+        width: 50%;
+        float: left;
+    }
+    .col-md-80 {
+        width: 80%;
+        float: left;
+    }
+    .col-md-30 {
+        width: 30%;
+        float: left;
+    }
+    .col-md-70 {
+        width: 70%;
+        float: left;
+    }
+    .col-md-20 {
+        width: 20%;
+        float: left;
+    }
+    .col-md-40 {
+        width: 40%;
+        float: left;
+    }
+    .col-md-60 {
+        width: 60%;
+        float: left;
+    }
+    .col-md-100 {
+        width: 100%;
+        float: left;
+    }
+    #divAirFlexDates,#divAirCarFlexDates {
+        display: flex !important;
+        margin: 5px 0 0;
+        width: max-content;
+        gap: 13px;
+    }
+    #divAirFlexDates>div,#divAirCarFlexDates>div,#divAirHotelBaggageIncluded>div {
+        display: flex !important;
+        margin-right:7px;
+        width: max-content;
+        gap:3px;
+    }
+    #divAirHotelBaggageIncluded>div{
+        gap: 18px;
+    }
+    #divAirHotelBaggageIncluded>div>div{
+        padding-right: 0!important;
+    }
+    #divAirFlexDates input,#divAirCarFlexDates input,
+    #divAirHotelBaggageIncluded input{
+       margin-top: -3px!important;
+    }
+    #divAirCarFlexDates label, div#divAirFlexDates label, .divAirHotelBaggageIncluded.form-group label{
+        font-size: 13px!important;
+        font-weight: 300!important;
+        margin: 0;
+    }
+    
+    .col-md-50 .col-lg-6 {
+        padding-left: 0;
+    }
+    #BtnAir,
+    #BtnHotel,
+    #BtnExtras {
+        text-align: right;
+    }
+    #divAirFlexDates .form-group {
+        margin-bottom: 0;
+        width: max-content;
+    }
+    .opcion-1 .checkindate-input,
+    .opcion-1 .checkoutdate-input,
+    .opcion-1 .dest-input,
+    .opcion-1 .promocode-input {
+        padding-left: 1.5rem;
+        padding-right: .8rem;
+        
+    }
+    .opcion-1 .promocode-input {
+        width:205px;
+        max-width:205px;
+    }
+    .col-md-30 .col-lg-12 {
+        padding-left: 0;
+    }
+    .col-md-60 .col-md-6 {
+        padding-left: 0;
+    }
+    #HotelDatesRooms .lblDates,
+    #NetacticaAirhotel .lblDates,
+    #NetacticaExtra .lblDates,
+    #HotelDatesRooms .lblRooms,
+    #NetacticaAirhotel .lblRooms,
+    #NetacticaExtra .lblRooms {
+        margin-left: -15px;
+    }
+    #divHotelRoomsGuests .col-lg-6 {
+        padding-left: 0;
+    }
+    .col-md-50 .col-md-3 {
+        padding-left: 0;
+    }
+    .col-md-40 .col-md-6 {
+        padding-left: 0;
+    }
+    .col-md-70 .col-md-6 {
+        padding-left: 0;
+    }
+    #divAirMultiDestination .col-lg-6 {
+        padding-left: 0;
+    }
+    .opcion-1 .multidest-flight {
+        margin-left: -15px!important;
+    }
+    #divAirPassengers {
+        padding-left: 0;
+    }
+}
+
+div#BtnAirHotel div div {
+    display: flex;
+    justify-content: flex-end;
+    align-items: end;
+}
+
+@media (min-width:1025px) {
+    div#divAirMultiDestination>div>.row>div:nth-child(5)>label,
+    .air-multiple-opt br {
+        display: none;
+    }
+    .air-multiple-opt {
+        min-height: 64px;
+        display: flex;
+        align-items: center;
+        gap: 15px;
+        margin: 0;
+    }
+    .fdsAirTripType.upTripType.upTripType-control {
+        min-height: 13px;
+    }
+    div#BusHotelDatesPassengers>div,
+    div#divBusDatesPassengers>div {
+        padding-left: 0;
+    }
+
+    div#BusHotelDatesPassengers>div:nth-child(1)>div,
+    div#divBusDatesPassengers>div:nth-child(1)>div,
+    div#divBusHotelRoomsGuests,
+    div#AireDatesPassengers>div:nth-child(1)>div {
+        padding-left: 15px;
+    }
+    div#divAirUpTripType {
+        margin-left: -6px;
+    }
+    div#CarDates>div>.row>div:nth-child(3), div#divCarAirportPickup {
+        padding-left: 0;
+    }
+    .opcion-1 .hotel-rooms-input, .opcion-1 .airhotel-rooms-input, .opcion-1 .bushotel-rooms-input, .opcion-1 .air-passengers-input, .opcion-1 .bus-passengers-input, input#txtAirCarNumberPassenger {
+        text-align: right;
+    }
+    div#divAirCities>div:last-child {
+    padding-right: 0;
+    }
+    .opcion-1 .special-options-input {
+        -moz-appearance: none;
+        -webkit-appearance: none;
+        appearance: none;
+        background-image: linear-gradient(45deg,transparent 50%,#c2c2c2 60%),linear-gradient(135deg, #c2c2c2 40%, transparent 50%) !important;
+        background-position: calc(100% - 26px) 17px, calc(100% - 20px) 17px, 100% 0;
+        background-size: 6px 10px, 6px 10px;
+        background-repeat: no-repeat;
+    }
+}
+
+
+/* estilos calendario  */
+
+@media (min-width: 768px) {
+    #ui-datepicker-div {
+        width: 47em !important;
+        padding: 2px 8px 10px 8px;
+        border-radius: 10px!important;
+    }
+}
+
+.ui-widget-header .ui-icon {
+    opacity: 60%;
+}
+
+.ui-datepicker .ui-datepicker-prev span,
+.ui-datepicker .ui-datepicker-next span {
+    margin-left: -14px !important;
+    margin-top: -5px !important;
+}
+
+.ui-datepicker-group.ui-datepicker-group-first {
+    padding-right: 10px !important;
+}
+
+.ui-datepicker-group.ui-datepicker-group-last {
+    padding-left: 10px !important;
+}
+
+#ui-datepicker-div .ui-widget-header {
+    background: none !important;
+}
+
+table.ui-datepicker-calendar tr th {
+    border-bottom: 1px solid #ccc;
+    border-top: 1px solid #ccc;
+}
+
+.ui-datepicker .ui-datepicker-title {
+    margin: 3px 0px !important;
+}
+
+span.ui-datepicker-month {
+    font-size: 16px;
+    margin-right: 6px;
+    font-weight: 700;
+}
+
+table.ui-datepicker-calendar span {
+    color: #ccc !important;
+}
+
+span.ui-state-default {
+    font-size: 13px !important;
+}
+
+.ui-datepicker td {
+    padding: 0px !important;
+}
+
+#ui-datepicker-div .ui-datepicker-days-cell-over a{
+    color: var(--SF-color-button-hover) !important;
+}
+
+#ui-datepicker-div .ui-state-active a,
+#ui-datepicker-div .ui-state-active-from a,
+#ui-datepicker-div .ui-state-active-from span,
+#ui-datepicker-div .ui-state-active-to a {
+    color: var(--SF-color-button-hover) !important;
+    background: var(--SF-background-button-hover) !important;
+    border-radius: 6px;
+}
+
+#ui-datepicker-div .ui-state-active-from-to {
+    background-color: #c9c9c987 !important;
+}
+
+#ui-datepicker-div a.ui-state-default:hover {
+    color: var(--SF-color-button-hover);
+    border-radius: 5px;
+    background: var(--SF-background-button-hover) ;
+}
+
+#ui-datepicker-div .ui-state-active,
+#ui-datepicker-div .ui-state-active-from,
+#ui-datepicker-div .ui-state-active-to {
+    background-color: #c9c9c987 !important;
+}
+
+#ui-datepicker-div a.ui-state-default {
+    font-weight: 500 !important;
+}
+
+#ui-datepicker-div .ui-datepicker-calendar th span {
+    color: #000 !important;
+    font-weight: 600;
+}
+
+#ui-datepicker-div a.ui-state-default {
+    font-weight: 300;
+    color: #000;
+    font-size: 12px;
+}
+/* fin estilos calendario  */
+
+@media (min-width:1025px) {
+   div .btn-search-container {
+        display: flex;
+        justify-content: flex-end;
+    }
+     div#BtnCar,#divCarAirportReturn {
+        margin-top: 5px;
+    }
+}
+
+@media (min-width:768px) and (max-width:1024px) {
+
+    div#divAirFlexDates, div#divAirCarFlexDates{
+        display: none!important;
+    }
+    div#divCarAirportReturn{
+        width: 50%;
+    }
+    .pop-up-title{
+        background: var(--SF-background-button);
+    }
+    .pop-up-title h2 {
+        font-size: 21px;
+        color: var(--SF-color-button);
+    }
+    .pop-up-close {
+        color: var(--SF-color-button);
+    }
+    div#divAirCarTogglePromoCode>div {
+        width: 100%;
+    }
+    body ul.ui-autocomplete {
+        box-shadow: rgba(0, 0, 0, 0.25) 0px 2px 4px;
+        width: 47% !important;
+        border-radius: 9px;
+    }
+    div[id*="TogglePromoCode"]>div {
+        width: 100%;
+    }
+    select#ddlCarTimePickup, select#ddlCarTimeDropoff {
+        padding-left: 20px!important;
+    }
+}
+
+ @media (min-width:1025px) {
+    .opcion-1 .widget-tab-container {
+        box-shadow: 0 3px 2px 0 rgb(128 98 96 / 24%) !important;
+        margin: 3px;
+    }
+    div#NetacticaAir,div#NetacticaExtra,div#NetacticaBus {
+        display: grid;
+        grid-template-columns: 40% 48% 12%;
+        grid-template-areas:
+            "title title title"
+            "options options options"
+            "inout date search"
+            "option option option"
+            "sOption sOption sOption"
+            "check check check";
+        align-items: flex-end;
+    }
+    div#AirhotelDatesRooms span, div#divAirHotelCities label,
+    div#divBusHotelCities label,div#BusHotelDatesPassengers span
+    ,div#divExtraDestination label, div#divExtraDates span
+     {
+        color: var(--SF-color-typography);
+        font-size: var(--SF-font-size-base);
+        margin: 0;
+    }
+    .tab-content.widget-tab-container > div > div  > div:nth-child(1){        
+        grid-area : title ;
+        
+    }
+    div#divAirUpTripType,div#divBusUpTripType {
+        grid-area: options;
+        margin-bottom: 7px;
+        min-height: 10px;
+    }
+    
+    div#divAirCities,div#divExtraDestination {
+        grid-area: inout;
+        width: 100%;
+    }
+    div#AireDatesPassengers,div#divExtraDates {
+        grid-area: date;
+        width: 100%;
+    }
+    
+    div#BtnAir,div#BtnExtras {
+        grid-area: search;
+    }
+    div#BtnExtras>div {
+        padding: 0;
+    }
+    div#AireDatesPassengers+div {
+        width: 100%;
+        grid-area: option;
+        align-items: center;
+        margin: 5px -15px;
+    }
+
+    .opcion-1 .btnSearch {
+        padding: 10px 10px;
+        width: 100%;
+        max-width: 120px;
+        border-radius: 4px;
+        border: 0;
+    }
+    .opcion-1 .tab-content.widget-tab-container
+    .form-group {
+        margin-bottom: 0px;
+    }
+    div#NetacticaAir div#AireDatesPassengers span, div#NetacticaAir div#divAirCities label {
+        color: var(--SF-color-typography);
+        font-size: 16px;
+        margin: 0;
+    } 
+
+
+    /* hoteles  */
+
+    div#NetacticaHotel {
+        display: grid;
+        grid-template-columns: 25% 65% 10%;
+        grid-template-areas:"title title title" "inout date search" "check check check";
+        align-items: flex-end;
+    }
+    div#HotelDestination{
+        grid-area: inout;
+        width: 100%;
+    }
+    div#HotelDatesRooms{
+        grid-area: date;
+        width: 100%;
+    }
+    div#BtnHotel{
+        grid-area: search;
+        width: 100%;
+    }
+    div#NetacticaHotel  
+    .form-group {
+        margin-bottom: 0px;
+    }
+ /* div#NetacticaHotel div#HotelDatesRooms 
+    span,
+    div#NetacticaHotel div#HotelDestination
+    label{
+        display: none;
+    }  */
+    div#BtnHotel>div {
+        padding: 0;
+    }
+    /* aereo + hoteles */
+    div#NetacticaAirhotel, div#NetacticaBusHotel, div#NetacticaAirCar {
+        display: grid;
+        grid-template-columns: 44% 44% 12%;
+        grid-template-areas:
+            "title title title"
+            "inout date search"
+            "check check check";
+        align-items: center;
+    }
+    div#NetacticaAirCar {
+        grid-template-areas:
+            "title title title"
+            "inout date search"
+            "option option option"
+            "Soption Soption Soption"
+            "check check check";
+    }     
+    div#NetacticaAirhotel{
+        grid-template-areas:
+            "title title title"
+            "inout date search"            
+            "option option option"
+            "Soption Soption Soption"
+            "check check check";
+    }     
+    div#divAirHotelCities,div#divBusHotelCities,div#divBusCities,div#divAirCarCities {
+        grid-area: inout;
+        width: 100%;
+        
+    }
+    div#AirHotelDatesRooms,div#BusHotelDatesPassengers,div#divBusDatesPassengers,div#AirCarDatesPassengers {
+        grid-area: date;
+        width: 100%;
+    }
+    div#AirCarDatesPassengers+div{
+        grid-area:option;
+        margin:5px 0;
+        margin-left: -15px;
+    }
+    #divAirCarSpecialOptionsControl{
+        grid-area:Soption;
+        width: 100%;
+        margin-top: 5px;
+    }
+    div#divAirCarTogglePromoCode{
+        grid-area:check;
+        width: 100%;
+        margin-top: 5px;  
+    }
+    div#BtnAirHotel, div#BtnBusHotel,div#BtnBus,div#BtnAirCar {
+        grid-area: search;
+        width: 120px;
+        max-width: 120px;
+        height: 100%;
+        display: flex;
+        justify-content: flex-end;
+        align-items: flex-end;
+        margin-left: 0px;
+    }
+    #BtnAirHotel>div, #BtnBusHotel>div,#BtnBus>div,#BtnAirCar>div {
+        padding:0;
+    }
+    div#divAirHotelBaggageIncluded,#divBusTogglePromoCode,div#divBusHotelTogglePromoCode{
+        grid-area: check;
+        margin-top: 5px;
+    }
+    div#divBusHotelTogglePromoCode{
+        margin-top:10px
+    }
+     div#divBusSpecialOptionsControl {
+        grid-area: sOption;
+        margin-top: 10px;
+    }
+    #divBusTogglePromoCode{
+        margin-top: 7px;
+    }    
+    div#BtnAirHotel>div,div#BtnBusHotel>div {
+        padding: 0;
+    }
+    div#divAirHotelBaggageIncluded {
+        grid-area: option;
+        margin-top: 7px;
+    }
+
+    div#BtnBusHotel,
+    div#AireDatesPassengers{
+        margin: 0;
+    }
+    div#divAirMultiDestination {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+    div#divCarAirportPickup{
+        padding-left: 0;
+    }
+    div#BtnCar>div:nth-child(2) {
+        padding-right: 0;
+    }
+    #divAirHotelTogglePromoCode .promo-code-group {
+        padding-left: 0;
+        margin-bottom: 5px;
+    }
+    #txtBusDateTo.disabled+i,
+    #txtAirDateTo.disabled+i,
+    #txtAirDateTo.disabled {
+        color: #999999;
+    }
+}
+body  
+ul.ui-autocomplete {
+    background: #fff;
+    border: none;
+}
+select#ddlCarTimePickup, select#ddlCarTimeDropoff {
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    appearance: none;
+}
+#ddlCarTimePickup,
+#ddlCarTimeDropoff {
+    background-image: linear-gradient(45deg,transparent 50%,#c2c2c2 60%),linear-gradient(135deg, #c2c2c2 40%, transparent 50%) !important;
+    background-position: calc(100% - 13px) 18px, calc(100% - 8px) 18px, 100% 0;
+    background-size: 6px 10px, 6px 10px;
+    background-repeat: no-repeat;
+}
+@media (max-width:767px) {    
+    body  
+    ul.ui-autocomplete {
+        left: 0% !important;
+        width: 97% !important;
+    }
+}
+@media (max-width:1024px) {    
+    #txtBusDateTo.disabled+div img,
+    #txtAirDateTo.disabled+div img{
+        opacity: 0.5;
+    }
+    #txtBusDateTo.disabled::placeholder,
+    #txtAirDateTo.disabled::placeholder {
+        color: #bdbdbd;
+    }
+
+
+    .opcion-1 .widget-tabs {
+        display: flex!important;
+        gap: 14px;
+        overflow: scroll;
+        overflow-y: hidden;
+    }
+
+    div#divMobileTabs{
+        display: none;
+    }
+    #divAirTogglePromoCode, #divAirHotelTogglePromoCode, #divExtraTogglePromoCode {
+        margin-top: 0;
+    }
+    .divAirFlexDates {
+        display: none;
+    }
+    #ddlCarTimePickup,
+    #ddlCarTimeDropoff {
+        padding-left: 0!important;
+        padding-right: 0;
+        border-left: 23px solid transparent!important;
+        background-image: linear-gradient(45deg,transparent 50%,#c2c2c2 60%),linear-gradient(135deg, #c2c2c2 40%, transparent 50%) !important;
+        background-position: calc(100% - 15px) 17px, calc(100% - 10px) 17px, 100% 0;
+        background-size: 6px 10px, 6px 10px;
+        background-repeat: no-repeat;
+    }
+    .opcion-1 .special-options-input {
+        -moz-appearance: none;
+        -webkit-appearance: none;
+        appearance: none;
+        background-image: linear-gradient(45deg,transparent 50%,#c2c2c2 60%),linear-gradient(135deg, #c2c2c2 40%, transparent 50%) !important;
+        background-position: calc(100% - 25px) 19px, calc(100% - 19px) 19px, 100% 0;
+        background-size: 6px 10px, 6px 10px;
+        background-repeat: no-repeat;
+    }
+}
+@media (max-width:380px) {
+    .opcion-1 .widget-tabs {
+        gap: 4px;
+    }
+}
+body  .ui-autocomplete li {
+    padding: 7px 0px 7px 3px!important;
+    width: 100%;
+    border-bottom: 1px solid #f4f4f4;
+    background: #fff;
+}
+body  .ui-autocomplete li:hover{
+    background-color:#e9e9e9ab!important;
+
+}
+body  .ui-autocomplete li a:hover{
+    text-decoration: none;
+}
+
+
+/* overflow style " " */
+
+
+body  
+ul.ui-autocomplete::-webkit-scrollbar-track
+{
+	background-color: #F5F5F5;
+}
+
+body  
+ul.ui-autocomplete::-webkit-scrollbar
+{
+	width: 12px;
+	background-color: #F5F5F5;
+}
+
+body  
+ul.ui-autocomplete::-webkit-scrollbar-thumb
+{
+	background-color: #0080FF;
+}
+
+
+
+.opcion-1 div#AireDatesPassengers .multidest-flight {
+    display: block;
+}
+.img-input-search {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 3.2rem;
+    height: 48px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+}
+.img-input-search img {
+    max-width: 17px;
+}
+.title-drawer{
+    display: none;
+}
+
+.mobile-tabs ul#widget-tabs a img{
+    width: 27px;
+    height: 27px;
+}
+
+.form-group.form-inline {
+    background: var(--SF-background-button);
+    padding: 8px;
+}
+.opcion-1 .title-mobile-container {
+    text-align: center;
+    background-color: var(--autocomplete-bg);
+    border-bottom: 0;
+}
+
+.opcion-1 .title-mobile-container h2, .opcion-1 .title-mobile-container i.fa,
+ #divTitleDatePicker, div#divTitleDatePicker h2,
+ div#divTitleDatePicker i.fa, .pop-up-title, .pop-up-title h2{
+    color: var(--SF-color-button);
+    background: var(--SF-background-button);
+}
+
+.opcion-1 #divAutoCompleteMobileContainer .container .row {
+    background: var(--autocomplete-bg);
+}
+.form-group.form-inline>.destination-mobile-group,
+ input#txtMobileAutocomplete{
+    border-radius: 20px;
+ }
+
+
+/* Desk */
+@media (min-width:1025px) {
+    .opcion-1 {
+        border-radius: 7px;
+    }
+    .opcion-1 .widget-tab-container {
+        padding: 15px 15px 30px;
+        background-color: var(--SF-color-background);
+        border-radius: 8px;
+    }
+    .btnSearch:hover {
+        background-color: var(--SF-background-button-hover);
+        color: var(
+        --SF-color-button-hover);
+        border: 0;
+    }
+    .upTripType.upTripType-control label {
+        font-size: 13px!important;
+        font-weight: 300!important;
+        margin: 0;
+    }
+
+    .opcion-1 .widget-tabs-container li.active .fa {
+        color: var(--tabs-hover-text);
+    }
+    .img-input-search {
+        justify-content: flex-start;
+        margin-left: 7px;
+    }
+    .img-input-search img {
+        max-width: 14px;
+    }
+    .opcion-1 .widget-tabs li a {
+        padding-top: 17px;
+        padding-bottom: 17px;
+        border: 0 solid transparent;
+        font-size: 16px;
+        margin: 0;
+        border-radius: 10px;
+        background-color: var(--SF-tab-bg);
+        color: var(--SF-tab-color);
+        margin-left: 2px;
+        margin-bottom: 7px;
+    }
+    
+    .opcion-1 .widget-tabs >li:last-child a {
+        border-radius: 10px;
+    }
+    .opcion-1 .widget-tabs>li.active>a, .opcion-1 .widget-tabs>li a:hover, .opcion-1 .widget-tabs>li.active>a:focus {
+        background-color: var(--SF-tab-bg-hover);
+        color: var(--SF-tab-color-hover);
+        font-weight: 400;
+        border: 0;
+    }
+    .opcion-1 .widget-tabs-container label, div#AirHotelDatesRooms span, div#divExtraDates span, .opcion-1 .lblPassengers, #HotelDatesRooms .lblDates, #NetacticaAirhotel .lblDates, #NetacticaExtra .lblDates, #HotelDatesRooms .lblRooms, #NetacticaAirhotel .lblRooms, #NetacticaExtra .lblRooms, span.lblAirCarDates, div#divBusDatesPassengers span {
+        font-weight: 400;
+        color: var(--SF-color-typography);
+        font-size: var(--SF-font-size-base);
+        margin-bottom: 0;
+    }
+    span.lblAirCarDates {
+        margin-left: -15px;
+    }
+    .opcion-1 .product-title {
+        color: var(--SF-color-title);
+        margin-bottom: 8px;
+        font-size: 20px;
+        display: block!important;
+    }
+    .opcion-1 .fdsBusTripType {
+        padding-left: 11px;
+    }
+    select#ddlCarTimePickup, select#ddlCarTimeDropoff {
+        font-size: 12px!important;
+        padding-left: 22px!important;
+    }
+    .opcion-1 .fdsBusTripType {
+        margin-bottom: 5px;
+        margin-top: 5px;
+    }
+    .opcion-1 .upTripType.upTripType-control {
+        margin: 5px 0;
+        display: flex;
+        gap: 3px;
+    }
+    div#divCarChangeReturn input {
+        margin: 0px;
+        margin-top: -4px;
+    }
+    #divAirSpecialOptionsControl {
+        grid-area: sOption;
+        margin: 5px -15px 6px;
+    }
+    div#divAirSpecialOpt,.divBusSpecialOptContent,div#divAirCarSpecialOpt {
+        max-width: 500px;
+    }
+    #divHotelTogglePromoCode, #divAirHotelTogglePromoCode, #divExtraTogglePromoCode {
+        grid-area: check;
+        margin-top: 10px;
+    }
+    #divAirTogglePromoCode{
+     grid-area: check;   
+    }
+    .divCarTogglePromoCodePanel{
+        margin-top: 5px;
+    }
+    #divExtraTogglePromoCode>div {
+        margin-left: -15px;
+    }
+}
+@media (min-width:1025px) and (max-width:1385px) {
+    #ddlCarTimePickup,
+    #ddlCarTimeDropoff {
+        background-image: none!important
+    }
+}
+#divAutoCompleteMobileContainer .col-xs-12 {
+    padding: 0;
+}

@@ -69,17 +69,33 @@
     if (!desktop) {
         const imgLogo = document.querySelector('.header__logo img');
         const headerContainerMenu = document.querySelector('.header__container');
-        const newDiv = ()=> {return document.createElement('div')};
-        const divLogo   = newDiv();
+        const newDiv = () => document.createElement('div');
+        const divLogo = newDiv();
         const divBurger = newDiv();
         const burger = document.querySelector('.header__burger');
     
-        divLogo.classList.value = "header__menu header__menu--logo";
-        divLogo.innerHTML = `<img id="dnn_dnnLOGO_imgLogo" src="${imgLogo.src || ""}" alt="${imgLogo.alt || ""}"/>`;
+        // Agregar clases de forma segura
+        divLogo.classList.add("header__menu", "header__menu--logo");
+    
+        // Crear el logo sin usar innerHTML
+        const logoImg = document.createElement("img");
+        logoImg.id = "dnn_dnnLOGO_imgLogo";
+        logoImg.src = imgLogo?.src || "";
+        logoImg.alt = imgLogo?.alt || "";
+        divLogo.appendChild(logoImg);
+    
         headerContainerMenu.prepend(divLogo);
-        //burger add to menu mobile
-        divBurger.classList.value = "header__burger header__burger--active"
-        divBurger.innerHTML = burger.innerHTML;
-        divBurger.addEventListener('click',()=> burger.click());
+    
+        // Configurar el botón del menú hamburguesa
+        divBurger.classList.add("header__burger", "header__burger--active");
+    
+        // Clonar el contenido del botón de hamburguesa de forma segura
+        if (burger) {
+            const clonedBurger = burger.cloneNode(true);
+            clonedBurger.addEventListener("click", () => burger.click());
+            divBurger.appendChild(clonedBurger);
+        }
+    
         headerContainerMenu.append(divBurger);
     }
+    
