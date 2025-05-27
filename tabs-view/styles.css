@@ -1,0 +1,38 @@
+
+.menuItems {
+    margin-right: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-left: auto;
+    gap: 5px
+  }
+  
+  @media (min-width:768px) {
+    .menuItems {
+      width: 420px
+    }
+  }
+  
+  .menuItems__items {
+    list-style: none;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    width: 100%;
+    height: 100%;
+    text-decoration: none;
+    margin: 0;
+    display: block;
+    color: #000;
+    text-align: center;
+    cursor: pointer;
+    border-radius: 4px
+  }
+  
+  .menuItems__items.active,
+  .menuItems__items:hover {
+    background: #b91c1c;
+    color: #fff
+  }
+  

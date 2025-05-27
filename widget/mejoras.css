@@ -5,3 +5,26 @@ ul.ui-menu.ui-widget.ui-widget-content.ui-autocomplete.ui-front .ui-menu-item-wr
     background: none;
     border: none;
 }
+.ui-autocomplete::-webkit-scrollbar {
+    width: 8px;
+  }
+  
+  .ui-autocomplete::-webkit-scrollbar-track {
+    background: #000; /* fondo del track */
+  }
+  
+  .ui-autocomplete::-webkit-scrollbar-thumb {
+    background-color: #222; /* color del scroll */
+    border-radius: 4px;
+  }
+  
+  .ui-autocomplete::-webkit-scrollbar-thumb:hover {
+    background-color: #444;
+  }
+  
+  /* Firefox */
+  .ui-autocomplete {
+    scrollbar-width: thin;
+    scrollbar-color: #222 #000;
+  }
+  
