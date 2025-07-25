@@ -16,6 +16,14 @@ $(document).ready(function() {
 //example:
 // changeTitle("a[aria-controls='airhotel'] span","Vuelos + Hotel");
 
+if(document.querySelector("a[aria-controls='extra'] span")){
+    changeTitle("a[aria-controls='extra'] span","Actividades");
+}
+
+if(document.querySelector("#ExtraTitle .product-title")){
+    changeTitle("#ExtraTitle .product-title","Actividades");
+}
+
 //---------checked extra type------------.
 // const ExtraType = document.getElementById("chkExtraType_5");
 // if(ExtraType){
